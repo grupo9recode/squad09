@@ -10,11 +10,11 @@ const Login = () => {
                     <hr/>
                 <form>
                     <div className="mb-3">
-                        <label for="exampleInputEmail1" className="form-label">Email</label>
+                        <label for="email" className="form-label">Email</label>
                         <input type="email" className="form-control" id="email" name="email" />
                     </div>
                     <div className="mb-3">
-                        <label for="exampleInputPassword1" className="form-label">Senha</label>
+                        <label for="senha" className="form-label">Senha</label>
                         <input type="password" className="form-control" id="senha" name="senha" />
                     </div>
                     <div className="mb-3 d-flex">
