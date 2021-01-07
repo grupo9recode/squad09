@@ -8,6 +8,9 @@ import Servicos from './Pages/Serviços';
 import Cadastrese from './Pages/Cadastrese';
 import Produtos from './Pages/Produtos';
 import NotFound from './Pages/NotFound';
+import EditarDados from './Pages/EditarDados';
+import CadastrarProdutos from './Pages/CadastrarProdutos';
+import CadastrarServicos from './Pages/CadastrarServicos';
 const Rotas = () => {
     return (
         <BrowserRouter>
@@ -19,6 +22,9 @@ const Rotas = () => {
                 <Route exact path="/servicos" component={Servicos} />
                 <Route exact path="/cadastrese" component={Cadastrese} />
                 <Route exact path="/produtos" component={Produtos} />
+                <Route exact path="/editardados" component={EditarDados} />
+                <Route exact path="/cadastrarprodutos" component={CadastrarProdutos} />
+                <Route exact path="/cadastrarservicos" component={CadastrarServicos}/>
                 <Route  component={NotFound} />
 
             </Switch>

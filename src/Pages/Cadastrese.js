@@ -4,8 +4,8 @@ const Cadastrese = () => {
     return (
         <>
             <Menu/>
-            <div className="container">
-                <div className="mt-5 border p-3 caixa">
+            <div className="container ">
+                <div className="mt-5  p-3  border box-menu">
                     <h1 className="text-center">Cadastrar</h1><hr></hr>
                 <form>
                     <div className="mb-3">
@@ -37,7 +37,7 @@ const Cadastrese = () => {
                         <input type="password" className="form-control" id="senha" name="senha" />
                     </div>
                     <div className="mb-3 text-center">
-                        <button type="submit" className="btn btn-primary">Registrar</button>  
+                        <button type="submit" className="btn btn-primary btn-lg">Registrar</button>  
                     </div>
                 </form>
                 </div>

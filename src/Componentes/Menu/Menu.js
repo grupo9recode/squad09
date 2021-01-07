@@ -1,6 +1,6 @@
 import './Menu.css';
 
-function Menu() {
+const Menu=()=> {
     return (
        <>
             <nav class="navbar navbar-expand-lg navbar-dark menu-container">
