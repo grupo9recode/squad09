@@ -10,6 +10,7 @@ const Contato = () => {
             <div className='container container-flui'>
             <div className='d mt-5  p-3  border box-menu'>
                 <h1 className='text-center'>Contato</h1>
+                <p>Testando!!!!</p>
                 <hr/>
                 <form action='' method=''>
                     <div className="form-group">
