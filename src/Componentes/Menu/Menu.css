@@ -1,0 +1,11 @@
+.menu-container{
+    background-color: #2C423D;
+    color: aliceblue;
+    text-align: center;
+}
+
+@media(min-width:700px){
+    .menu-links{
+        justify-content: flex-end;
+    }
+}
