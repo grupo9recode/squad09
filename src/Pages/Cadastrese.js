@@ -5,7 +5,7 @@ const Cadastrese = () => {
         <>
             <Menu/>
             <div className="container ">
-                <div className="mt-5  p-3  border box-menu">
+                <div className="mt-5 mb-5 p-3  border box-menu">
                     <h1 className="text-center">Cadastrar</h1><hr></hr>
                 <form>
                     <div className="mb-3">
