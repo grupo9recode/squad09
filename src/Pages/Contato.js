@@ -7,7 +7,7 @@ const Contato = () => {
     return (
         <>
             <Menu />
-            <div className='container container-flui'>
+            <div className='container container-fluid'>
             <div className='d mt-5  p-3  border box-menu'>
                 <h1 className='text-center'>Contato</h1>
                 <hr/>
