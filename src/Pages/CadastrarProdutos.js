@@ -38,8 +38,12 @@ export default function CadastrarProdutos() {
                         </div>
                         
                         <div className="mb-3">
-                            <label className="form-label text-white">IMAGEM</label>
-                            <input type="file" name="imagem" />
+                        <label className="form-label text-white">IMAGEM</label>
+                        <div className="custom-file">
+                            <input type="file" className="custom-file-input" id="validatedCustomFile"/>
+                            <label className="custom-file-label" for="validatedCustomFile">Escolha o arquivo</label>
+                            <div className="invalid-feedback">Example invalid custom file feedback</div>
+                        </div>
                         </div>
 
                         <div className="mb-3"> 
