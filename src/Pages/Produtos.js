@@ -3,6 +3,7 @@ import IndexProduto from "../Componentes/Produtos/IndexProdutos";
 import './Css/Produtos.css';
 import React from 'react';
 
+
 const Produtos = () => {
     const [action, setAction] = React.useState('');
     const [user, setUser] = React.useState('');
@@ -25,13 +26,19 @@ const Produtos = () => {
     return (
         <>
             <Menu/>
-            <div className="container-fluid">
                 <h3 className="text-center mt-3">Selecionar categoria aqui</h3>
                 <div className="d-flex box">
-                    {action && action.map(mapear => <IndexProduto categoria={mapear.categoria} produto={mapear.produto} valor={mapear.valor} descricao={mapear.descricao} anunciante={mapear.nome} />)}    
+
+                    <section id="team">
+                        <div className="container-fluid my-3 py-5">   
+                            <div className="row row-cols-2">      
+                                {action && action.map(mapear => <IndexProduto categoria={mapear.categoria} produto={mapear.produto} valor={mapear.valor} descricao={mapear.descricao} anunciante={mapear.nome} />)}
+                            </div>
+                        </div>
+                    </section>
+                        
                 </div>        
-                <button onClick={pegarProdutos}>Ver</button>
-            </div>
+                    <button onClick={pegarProdutos}>Ver</button>
         </>
     )
 }
