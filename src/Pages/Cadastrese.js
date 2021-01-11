@@ -32,7 +32,7 @@ const Cadastrese = () => {
                 <form action='/login' onSubmit={pegarDados}>
                     <div className="mb-3">
                         <label for="nome" className="form-label">USERNAME</label>
-                        <input type="text" className="form-control" id="username" name="username" />
+                        <input type="text" className="form-control" id="username" name="username" placeholder="@"/>
                     </div>
                     <div className="mb-3">
                         <label for="nome" className="form-label">NOME</label>
