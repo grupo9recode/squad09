@@ -32,7 +32,7 @@ const Produtos = () => {
                     <section id="team">
                         <div className="container-fluid my-3 py-5">   
                             <div className="row row-cols-2">      
-                                {action && action.map(mapear => <IndexProduto categoria={mapear.categoria} produto={mapear.produto} valor={mapear.valor} descricao={mapear.descricao} anunciante={mapear.nome} />)}
+                                {action && action.map(mapear => <IndexProduto username={mapear.username} nome={mapear.nome} produto={mapear.produto} categoria={mapear.categoria}  valor={mapear.valor} descricao={mapear.descricao} celular={mapear.celular} email={mapear.email} />)}
                             </div>
                         </div>
                     </section>

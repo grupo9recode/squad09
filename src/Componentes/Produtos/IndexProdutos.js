@@ -13,18 +13,18 @@ const IndexProduto = (props)=>{
 
     return(
         <>         
+            
             <div className="col mb-3">
                 <div className="card card-box">
                     <div className="card-body">
                         <div className="text-center">
                             <img src={require('../../Imagens/icon.jpg').default} className="img-fluid rounded-circle w-50 mb-3" alt="..." />
-                            <h5>Maria Silva</h5>
+                            <h5>{props.username}</h5>
                             <hr className="barra"></hr>
                             <h6>{props.produto}</h6>
                         </div>
                         <div className="mb-3">
                             <img src={require('../../Imagens/default.jpg').default} className="card-img-top" alt="..." />
-                            <p className="card-text">Anunciante: {props.anunciante}  </p>
                             <div className="">
                                 <p className="text-center lead">Clique para mais informações.</p>
                                 <button className="btn btn-sm p-botao abrir-modal" onClick={abrirModal}>DETALHES</button>
@@ -38,11 +38,13 @@ const IndexProduto = (props)=>{
                 <div className="m-modal">
                     <span className="fechar" onClick={fecharModal}>x</span>
                     <div className="card-body">
-                        <h5 className="card-title">Categoria: </h5>
-                        <p className="card-text">Nome do protudo: </p>
+                        <h5 className="card-title">Categoria: {props.categoria} </h5>
+                        <p className="card-text">Anunciante {props.nome} </p>
+                        <p className="card-text">Nome do protudo: {props.produto} </p>
                         <p className="card-text">Valor: {props.valor} </p>
-                        <p className="card-text">Descrição do produto: {props.descricao} </p>
-                        
+                        <p className="card-text">Descrição do produto: {props.descricao}</p>
+                        <p className="card-text">Celular: {props.celular}</p>
+                        <p className="card-text">Email: {props.email}</p>
                     </div>
                 </div>
             </div>                       

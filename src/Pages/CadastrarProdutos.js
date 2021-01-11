@@ -24,6 +24,10 @@ export default function CadastrarProdutos() {
                         <h1 className="text-center text-white">Cadastrar Produto</h1><hr></hr>
                     <form action="/produtos" className="form-group" onSubmit={cadastrarProdutos}>
                         <div className="mb-3">
+                            <label for="nome" className="form-label text-white">SEU USERNAME</label>
+                            <input type="text" className="form-control" id="username" name="username" />
+                        </div>
+                        <div className="mb-3">
                             <label for="nome" className="form-label text-white">PRODUTO</label>
                             <input type="text" className="form-control" id="produto" name="produto" />
                         </div>
