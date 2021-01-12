@@ -23,6 +23,16 @@ valor varchar (50),
 descricao varchar(500)
 );
 
+create table cadastrarservico(
+id_cad_serv int auto_increment,
+servico varchar(100),
+categoria varchar(50),
+imagem varchar(100) default '../Imagens/default.jpg',
+valor varchar (50),
+descricao varchar(500),
+primary key (id_cad_serv)
+);
+
 alter table cadastrarprodutos 
 ENGINE = innodb;
 
