@@ -1,5 +1,6 @@
 import Menu from '../Componentes/Menu/Menu';
 import './Css/MinhaConta.css'
+import Sair from '../Sair'
 const MinhaConta = () => {
     return (
         <>
@@ -13,7 +14,7 @@ const MinhaConta = () => {
                         <a href='cadastrarprodutos'><p>CADASTRAR PRODUTOS</p></a>
                         <a href='cadastrarservicos'><p>CADASTRAR SERVIÇOS</p></a>
                         {/*funcao sair*/}
-                        <a href='#'><p>SAIR</p></a>
+                        <a onClick={Sair}><p>SAIR</p></a>
                     </div>
                 </div>
                 <div className="container text-center mt-5 box-minhas-vendas pt-3">

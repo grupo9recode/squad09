@@ -1,3 +1,4 @@
+import Sair from '../../Sair'
 
 
 
@@ -5,7 +6,7 @@ const MenuFechado = () => {
     return (
         <>
         <nav className="navbar navbar-expand-lg navbar-dark menu-container">
-            <img src={require('../../Imagens/logo.png').default} alt="" width="50" />
+            <a href='/'><img src={require('../../Imagens/logo.png').default} alt="" width="50" /></a>
             <button className="navbar-toggler text-center" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon m-auto"></span>
             </button>
@@ -28,7 +29,7 @@ const MenuFechado = () => {
                     </li>
                     
                     <li className="nav-item active">
-                        <a className="nav-link text-light" href='#' onClick="Sair()">Sair<span className="sr-only">(current)</span></a>
+                        <a className="nav-link text-light" href='#' onClick={Sair}>Sair<span className="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>
