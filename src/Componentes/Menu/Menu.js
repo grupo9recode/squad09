@@ -6,11 +6,14 @@ import './Menu.css';
 
 
 const Menu = () => {
-    
+
+        
     return (
+        
         <>
-            {Autenticacao() ? MenuFechado() : MenuAberto()
+            {  Autenticacao() ? MenuFechado() : MenuAberto()
             } 
+            
         </>    
     )
     

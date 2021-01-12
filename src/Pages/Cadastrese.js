@@ -17,10 +17,16 @@ const Cadastrese = () => {
         const resposta = await fetch(url, cabecalho);
         const retorno = await resposta.json();
         console.log(retorno);
+
+        
+        
+        
     }
 
-    const cadastrado = () =>{
-        alert('Cadastro efetuado!')
+    const Enviar = () => {
+        if (alert("Cadastro feito!")) {
+            window.location.href='/login';
+        }
     }
 
     return (
@@ -43,11 +49,11 @@ const Cadastrese = () => {
                     
                     <div className="mb-3">
                         <label for="celular" className="form-label">CELULAR</label>
-                        <input type="text" className="form-control" id="celular" name="celular" />
+                        <input type="text" className="form-control" id="celular" name="celular" required/>
                     </div>
                     <div className="mb-3">
                         <label for="email" className="form-label">EMAIL</label>
-                        <input type="text" className="form-control" id="email" name="email" />
+                        <input type="text" className="form-control" id="email" name="email" required />
                     </div>
                     <div className="mb-3">
                         <label for="confirmaemail" className="form-label">CONFIRMAR EMAIL</label>
@@ -58,7 +64,7 @@ const Cadastrese = () => {
                         <input type="password" className="form-control" id="senha" name="senha" />
                     </div>
                     <div className="mb-3 text-center">
-                        <button type="submit" className="btn btn-primary btn-lg" onClick={cadastrado}>Registrar</button>  
+                        <button type="submit" className="btn btn-primary btn-lg" onClick={Enviar} >Registrar</button>  
                     </div>
                 </form>
                 </div>

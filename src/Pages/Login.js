@@ -1,6 +1,9 @@
 import Menu from "../Componentes/Menu/Menu"
 import './Css/Login.css'
 const Login = () => {
+    const validar = () => {
+        localStorage.setItem('key', "true")
+    }
     return (
         <>
             <Menu/>
@@ -23,7 +26,7 @@ const Login = () => {
                             <a href="/cadastrese" className="nav-link">Cadastre-se</a>
                         </div>
                         <div className="ml-auto mt-4">
-                            <button type="submit" className="btn btn-primary btn-lg">Login</button>
+                            <button type="submit" onClick={validar} className="btn btn-primary btn-lg">Login</button>
                         </div>   
                     </div>
                 </form>
