@@ -1,9 +1,21 @@
 import Menu from "../Componentes/Menu/Menu"
 import './Css/Login.css'
 const Login = () => {
-    const validar = () => {
-        localStorage.setItem('key', "true")
+    const validar=()=> {
+        
+        if (document.getElementById("email").value !== '' && document.getElementById("senha").value !== '') {
+            alert('Login efetuado!')
+            localStorage.setItem('key', JSON.stringify(true));
+            
+        } else {
+            // condição para verificar e colocar no localstorage
+            alert("Acesso negado")  
+        };   
     }
+    if (localStorage.getItem('key')) {
+        window.location='/minhaconta'
+    }
+    
     return (
         <>
             <Menu/>
@@ -11,7 +23,7 @@ const Login = () => {
                 <div className="mt-5  p-3 border box-menu">
                     <h1 className="text-center">Login</h1>
                     <hr/>
-                <form>
+                <form action='' method='get' >
                     <div className="mb-3">
                         <label for="email" className="form-label">Email</label>
                         <input type="email" className="form-control" id="email" name="email" />
@@ -26,7 +38,7 @@ const Login = () => {
                             <a href="/cadastrese" className="nav-link">Cadastre-se</a>
                         </div>
                         <div className="ml-auto mt-4">
-                            <button type="submit" onClick={validar} className="btn btn-primary btn-lg">Login</button>
+                                <button type="submit" onClick={validar} className="btn btn-primary btn-lg">Login</button>
                         </div>   
                     </div>
                 </form>

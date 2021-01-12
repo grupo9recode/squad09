@@ -27,7 +27,7 @@ const IndexProduto = (props)=>{
                             <img src={require('../../Imagens/default.jpg').default} className="card-img-top" alt="..." />
                             <div className="">
                                 <p className="text-center lead">Clique para mais informações.</p>
-                                <button className="btn btn-sm p-botao abrir-modal" onClick={abrirModal}>DETALHES</button>
+                                <button className="btn btn-sm p-botao abrir-modal" onClick={abrirModal}>DETALHES</button>                           
                             </div>  
                         </div>
                     </div>

@@ -1,7 +1,7 @@
 
 const Sair = () => {
     localStorage.removeItem('key');
-    window.location.reload();
+    window.location.href='/';
 };
 
 export default Sair;
