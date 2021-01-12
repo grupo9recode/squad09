@@ -2,17 +2,16 @@
 
 header("Access-Control-Allow-Origin:*");
     require_once '../connect/conexao.php';
-    
+
     if($_SERVER['REQUEST_METHOD'] === 'POST'){
-        
-        $username  = $_POST['username'];
-        $produto   = $_POST['produto'];
+        $produto = $_POST['produto'];
         $categoria = $_POST['categoria'];
-        $imagem    = $_FILES['imagem'];
-        $valor     = $_POST['valor'];
+        $imagem = $_POST['imagem'];
+        $valor = $_POST['valor'];
         $descricao = $_POST['descricao'];
 
-        $sql = "INSERT INTO cadastrarprodutos VALUES ('$username', '$produto', '$categoria', '$imagem', '$valor', '$descricao')";
+        $sql = "INSERT INTO cadastrarservicos VALUES 
+        (null, '$produto', '$categoria', '$imagem', '$valor', '$descrica') ";
         nonquery($sql);
         echo json_encode(array("msg" => "Método POST Efetuado"));
 

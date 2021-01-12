@@ -1,7 +1,10 @@
 <?php
     require_once '../connect/conexao.php';
 
-    $result = query("SELECT * FROM cadastrarprodutos");
+    $result = query("SELECT username, produto, categoria, valor, descricao, nome, cpf, celular, email
+                    FROM cadastrarprodutos
+                    INNER JOIN usuario 
+                    ON id_usuario = username;");
 
     while ($linha = mysqli_fetch_assoc($result)){
         $produtos[] = $linha;

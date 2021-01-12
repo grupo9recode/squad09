@@ -37,6 +37,10 @@ const Cadastrese = () => {
                     <h1 className="text-center">Cadastrar</h1><hr></hr>
                 <form action='/login' onSubmit={pegarDados}>
                     <div className="mb-3">
+                        <label for="nome" className="form-label">USERNAME</label>
+                        <input type="text" className="form-control" id="username" name="username" placeholder="@"/>
+                    </div>
+                    <div className="mb-3">
                         <label for="nome" className="form-label">NOME</label>
                         <input type="text" className="form-control" id="nome" name="nome" />
                     </div>
