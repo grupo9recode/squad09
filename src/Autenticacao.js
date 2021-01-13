@@ -1,7 +1,7 @@
 
 
 function Autenticacao() {
-    if (localStorage.getItem('key') === "true") {
+    if (JSON.parse(localStorage.getItem('key')) === true) {
         return true
     }
     else {

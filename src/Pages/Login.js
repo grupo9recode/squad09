@@ -5,7 +5,7 @@ const Login = () => {
         
         if (document.getElementById("email").value !== '' && document.getElementById("senha").value !== '') {
             alert('Login efetuado!')
-            localStorage.setItem('key', JSON.stringify(true));
+            localStorage.setItem('key', true);
             
         } else {
             // condição para verificar e colocar no localstorage
