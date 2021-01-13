@@ -14,4 +14,5 @@ function ComponentFooter() {
     )
 }
 
+
 export default ComponentFooter;
