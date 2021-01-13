@@ -9,23 +9,21 @@ const MenuAberto = () => {
                 </button>
                 <div className="collapse navbar-collapse menu-links" id="navbarNav">
                     <ul className="navbar-nav">
+                        
                         <li className="nav-item active">
-                            <a className="nav-link text-light" href="/" to='/'>Home<span className="sr-only">(current)</span></a>
+                            <a className="nav-link text-dark font-weight-bold" href="/produtos" to='/produtos'>PRODUTOS<span className="sr-only">(current)</span></a>
                         </li>
                         <li className="nav-item active">
-                            <a className="nav-link text-light" href="/produtos" to='/produtos'>Produtos<span className="sr-only">(current)</span></a>
+                            <a className="nav-link text-dark font-weight-bold" href="/servicos" to='/servicos'>SERVIÇOS<span className="sr-only">(current)</span></a>
                         </li>
                         <li className="nav-item active">
-                            <a className="nav-link text-light" href="/servicos" to='/servicos'>Serviços<span className="sr-only">(current)</span></a>
+                            <a className="nav-link text-dark font-weight-bold" href="/contato" to='/contato'>CONTATOS <span className="sr-only">(current)</span></a>
                         </li>
                         <li className="nav-item active">
-                            <a className="nav-link text-light" href="/contato" to='/contato'>Contato <span className="sr-only">(current)</span></a>
+                            <a className="nav-link text-dark font-weight-bold" href="/login" to='/login'><button type="button" class="btn btn-light font-weight-bold">ENTRAR</button><span className="sr-only">(current)</span></a>
                         </li>
                         <li className="nav-item active">
-                            <a className="nav-link text-light" href="/login" to='/login'>Login<span className="sr-only">(current)</span></a>
-                        </li>
-                        <li className="nav-item active">
-                            <a className="nav-link text-light" href="/cadastrese" to='cadastrese'>Cadastre-se<span className="sr-only">(current)</span></a>
+                            <a className="nav-link text-dark font-weight-bold" href="/cadastrese" to='cadastrese'><button type="button" class="btn btn-light font-weight-bold">CADASTRE-SE</button><span className="sr-only">(current)</span></a>
                         </li>
                     </ul>
                 </div>
