@@ -9,23 +9,25 @@ const Contato = () => {
             <Menu />
             <div className='container container-fluid'>
             <div className='d mt-5  p-3  border box-menu'>
-                <h1 className='text-center'>Contato</h1>
+                <h1 className='text-center text-dark font-weight-bold'>ENTRE EM CONTATO CONOSCO</h1>
                 <hr/>
                 <form action='' method=''>
-                    <div className="form-group">
-                        <label for="nome">Nome</label>
+                    <div className="form- text-dark font-weight-bold">
+                        <label for="nome">NOME</label>
                         <input type="name" className="form-control" id="nome" placeholder="Digite seu nome" />
                     </div>
-                    <div className="form-group">
-                        <label for="email">Email address</label>
+                    <br/>
+                    <div className="form- text-dark font-weight-bold">
+                        <label for="email">E-MAIL</label>
                         <input type="email" className="form-control" id="email" placeholder="name@example.com" />
                     </div>
-
-                    <div className="form-group">
-                        <label for="mensagem">Example textarea</label>
+                    <br/>
+                    <div className="form- text-dark font-weight-bold">
+                        <label for="mensagem">MENSAGEM</label>
                         <textarea className="form-control" id="mensagem" rows="3"></textarea>
                     </div>
-                    <button type='submit' className='btn btn-lg  btn-primary'>Enviar</button>
+                    <br/>
+                    <button type='submit' className='btn btn-light text-dark font-weight-bold'>ENVIAR</button>
                 </form>
                 </div>
                 </div>

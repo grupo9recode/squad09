@@ -31,44 +31,45 @@ const Cadastrese = () => {
 
     return (
         <>
+        
             <Menu/>
             <div className="container ">
                 <div className="mt-5 mb-5 p-3  border box-menu">
-                    <h1 className="text-center">Cadastrar</h1><hr></hr>
+                    <h1 className="text-center text-dark font-weight-bold ">CADASTRE-SE</h1><hr></hr>
                 <form action='/login' onSubmit={pegarDados}>
                     <div className="mb-3">
-                        <label for="username" className="form-label">USERNAME</label>
+                        <label for="username" className="form-label text-dark font-weight-bold">USERNAME</label>
                         <input type="text" className="form-control" id="username" name="username" placeholder="ex: @username"/>
                     </div>
                     <div className="mb-3">
-                        <label for="nome" className="form-label">NOME</label>
+                        <label for="nome" className="form-label text-dark font-weight-bold">NOME</label>
                         <input type="text" className="form-control" id="nome" name="nome" />
                     </div>
                     <div className="mb-3">
-                        <label for="cpf" className="form-label">CPF</label>
+                        <label for="cpf" className="form-label text-dark font-weight-bold">CPF</label>
                         <input type="number" maxlength="11" className="form-control" id="cpf" name="cpf" />
-                        <span className="text-danger">Digite apenas os números</span>
+                        <span className="text-danger text-dark font-weight-bold">Digite apenas os números</span>
                     </div>
                    
                     
                     <div className="mb-3">
-                        <label for="celular" className="form-label">CELULAR</label>
+                        <label for="celular" className="form-label text-dark font-weight-bold">CELULAR</label>
                         <input type="text" className="form-control" id="celular" name="celular" required/>
                     </div>
                     <div className="mb-3">
-                        <label for="email" className="form-label">EMAIL</label>
+                        <label for="email" className="form-label text-dark font-weight-bold">EMAIL</label>
                         <input type="text" className="form-control" id="email" name="email" required />
                     </div>
                     <div className="mb-3">
-                        <label for="confirmaemail" className="form-label">CONFIRMAR EMAIL</label>
+                        <label for="confirmaemail" className="form-label text-dark font-weight-bold">CONFIRMAR EMAIL</label>
                         <input type="text" className="form-control" id="confirmaemail" name="confirmaemail" />
                     </div>
                     <div className="mb-3">
-                        <label for="senha" className="form-label">SENHA</label>
+                        <label for="senha" className="form-label text-dark font-weight-bold">SENHA</label>
                         <input type="password" className="form-control" id="senha" name="senha" />
                     </div>
                     <div className="mb-3 text-center">
-                        <button type="submit" className="btn btn-primary btn-lg" onClick={Enviar} >Registrar</button>  
+                        <button type="submit" className="btn btn-light text-dark font-weight-bold" onClick={Enviar} >CADASTRAR</button>  
                     </div>
                 </form>
                 </div>
