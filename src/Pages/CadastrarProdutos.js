@@ -1,5 +1,6 @@
 import Menu from "../Componentes/Menu/Menu"
 import './Css/CadastrarProdutos.css';
+import Rodape from '../Componentes/Rodape/Rodape'
 
 export default function CadastrarProdutos() {
     const cadastrarProdutos = async(evento) => {
@@ -70,6 +71,7 @@ export default function CadastrarProdutos() {
                         </div>
                     </form>
                 </div>
+                <Rodape/>
             </div>
             
         </>
