@@ -1,3 +1,6 @@
+import { FaStoreAlt} from "react-icons/fa";
+import { BsPeople } from "react-icons/bs";
+import { MdContactMail } from "react-icons/md";
 
 const MenuAberto = () => {
     return (
@@ -11,19 +14,19 @@ const MenuAberto = () => {
                     <ul className="navbar-nav">
                         
                         <li className="nav-item active">
-                            <a className="nav-link text-dark font-weight-bold" href="/produtos" to='/produtos'>PRODUTOS<span className="sr-only">(current)</span></a>
+                            <a className="nav-link text-light font-weight-bold" href="/produtos" to='/produtos'><FaStoreAlt className="icons"/><span className="sr-only">(current)</span></a>
                         </li>
                         <li className="nav-item active">
-                            <a className="nav-link text-dark font-weight-bold" href="/servicos" to='/servicos'>SERVIÇOS<span className="sr-only">(current)</span></a>
+                            <a className="nav-link text-light font-weight-bold" href="/servicos" to='/servicos'><BsPeople className="icons" /><span className="sr-only">(current)</span></a>
                         </li>
                         <li className="nav-item active">
-                            <a className="nav-link text-dark font-weight-bold" href="/contato" to='/contato'>CONTATOS <span className="sr-only">(current)</span></a>
+                            <a className="nav-link text-light font-weight-bold" href="/contato" to='/contato'><MdContactMail className="icons" /><span className="sr-only">(current)</span></a>
                         </li>
                         <li className="nav-item active">
-                            <a className="nav-link text-dark font-weight-bold" href="/login" to='/login'><button type="button" class="btn btn-light font-weight-bold">ENTRAR</button><span className="sr-only">(current)</span></a>
+                            <a className="nav-link text-light font-weight-bold" href="/login" to='/login'><button type="button" class="btn btn-light btn-sm m-2 font-weight-bold botaoMenu">ENTRAR</button><span className="sr-only">(current)</span></a>
                         </li>
                         <li className="nav-item active">
-                            <a className="nav-link text-dark font-weight-bold" href="/cadastrese" to='cadastrese'><button type="button" class="btn btn-light font-weight-bold">CADASTRE-SE</button><span className="sr-only">(current)</span></a>
+                            <a className="nav-link text-light font-weight-bold" href="/cadastrese" to='cadastrese'><button type="button" class="btn btn-light btn-sm m-2 font-weight-bold">CADASTRE-SE</button><span className="sr-only">(current)</span></a>
                         </li>
                     </ul>
                 </div>

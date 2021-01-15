@@ -2,6 +2,60 @@
     width: 17rem;
 }
 
-.box{
+.box-produto{
     flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.caixa-produto{
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.boxBotao{
+    text-align: center;
+}
+
+.botaoCategoria{
+    background-color: pink;
+    width: 100%;
+    margin: 3px 3px 3px 0px ;
+}
+
+.botaoCategoria:hover{
+    box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.534);
+}
+
+.caixa-produto .imgProduto{
+    width: 300px!important;
+    height:250px!important;
+    width: auto;
+    height: auto;
+}
+
+.caixa-produto{
+    background-color: #8183df56;
+}
+
+.imgCategoria{
+    width: 100%!important;
+    height:100%!important;
+    width: auto;
+    height: auto;
+}
+
+.desc-produto{
+    width: 300px!important;
+    width: auto;
+    height: auto;
+}
+
+.botaoDescricao{
+    text-align: center;
+}
+
+.w-100{
+    height: 50%;
 }

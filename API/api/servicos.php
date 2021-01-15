@@ -1,16 +1,13 @@
 <?php
     require_once '../connect/conexao.php';
 
-    $result = query("SELECT id_cad_serv, servico, categoria, valor, descricao, id_usuario, nome
-                        FROM cadastrarprodutos
-                        INNER JOIN usuario
-                        ON id_usuario = id_card_serv");
+    $resultServico = query("SELECT * FROM cadastrarservico");
     
-    while ($linha = mysqli_fetch_assoc($result)){
-        $produtos[] = $linha;
+    while ($row = mysqli_fetch_assoc($resultServico)){
+        $servico[] = $row;
     }
 
     header("Acess-Control-Allow-Origin:*");
-    echo json_encode($produtos);
+    echo json_encode($servico);
                         
 ?>

@@ -1,5 +1,10 @@
 import Sair from '../../Sair'
-
+import { FiHome } from "react-icons/fi";
+import { FaStoreAlt} from "react-icons/fa";
+import { MdContactMail } from "react-icons/md";
+import { ImExit, ImCog } from "react-icons/im";
+import { BiCertification } from "react-icons/bi";
+import { BsPeople } from "react-icons/bs";
 
 
 const MenuFechado = () => {
@@ -13,23 +18,23 @@ const MenuFechado = () => {
             <div className="collapse navbar-collapse menu-links" id="navbarNav">
                 <ul className="navbar-nav">
                     <li className="nav-item active">
-                        <a className="nav-link text-light" href="/" to='/'>Home<span className="sr-only">(current)</span></a>
+                        <a className="nav-link text-light" href="/" to='/'><FiHome className="icons"/><span className="sr-only">(current)</span></a>
                     </li>
                     <li className="nav-item active">
-                        <a className="nav-link text-light" href="/produtos" to='/produtos'>Produtos<span className="sr-only">(current)</span></a>
+                        <a className="nav-link text-light" href="/produtos" to='/produtos'><FaStoreAlt className="icons"/><span className="sr-only">(current)</span></a>
                     </li>
                     <li className="nav-item active">
-                        <a className="nav-link text-light" href="/servicos" to='/servicos'>Serviços<span className="sr-only">(current)</span></a>
+                        <a className="nav-link text-light" href="/servicos" to='/servicos'><BsPeople className="icons" /><span className="sr-only">(current)</span></a>
                         </li>
                         <li className="nav-item active">
-                        <a className="nav-link text-light" href="/minhaconta" to='/minhaconta'>Minha Conta<span className="sr-only">(current)</span></a>
+                        <a className="nav-link text-light" href="/minhaconta" to='/minhaconta'><ImCog className="icons" /><span className="sr-only">(current)</span></a>
                     </li>
                     <li className="nav-item active">
-                        <a className="nav-link text-light" href="/contato" to='/contato'>Contato <span className="sr-only">(current)</span></a>
+                        <a className="nav-link text-light" href="/contato" to='/contato'><MdContactMail className="icons" /> <span className="sr-only">(current)</span></a>
                     </li>
                     
                     <li className="nav-item active">
-                        <a className="nav-link text-light" href='#' onClick={Sair}>Sair<span className="sr-only">(current)</span></a>
+                        <a className="nav-link text-light" href='#' onClick={Sair}><ImExit className="icons"/><span className="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>

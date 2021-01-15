@@ -8,11 +8,12 @@ header("Access-Control-Allow-Origin:*");
         $username  = $_POST['username'];
         $produto   = $_POST['produto'];
         $categoria = $_POST['categoria'];
-        $imagem    = $_FILES['imagem'];
+        $imagem    = $_POST['imagem'];
         $valor     = $_POST['valor'];
         $descricao = $_POST['descricao'];
 
-        $sql = "INSERT INTO cadastrarprodutos VALUES ('$username', '$produto', '$categoria', '$imagem', '$valor', '$descricao')";
+        $sql = "INSERT INTO cadastrarprodutos VALUES 
+        (null, '$username', '$produto', '$categoria', '$imagem', '$valor', '$descricao')";
         nonquery($sql);
         echo json_encode(array("msg" => "Método POST Efetuado"));
 

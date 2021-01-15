@@ -1,5 +1,5 @@
 .menu-container{
-    background-color:#ff8d9c;
+    background-color:#ff8d9cbb;
     color: black;
     text-align: center;
 }
@@ -8,4 +8,10 @@
     .menu-links{
         justify-content: flex-end;
     }
+}
+
+.icons{
+    width: 30px;
+    height: 30px;
+    margin: 10px;
 }
