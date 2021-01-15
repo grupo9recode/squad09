@@ -1,5 +1,6 @@
 import './IndexProdutos.css';
 import React from 'react';
+import Autenticacao from '../../Autenticacao'
 
 const IndexProduto = (props)=>{
 
@@ -11,6 +12,10 @@ const IndexProduto = (props)=>{
         document.getElementById('m-modal').style.top = "-100%";
     }
 
+    function deletar() {
+       window.confirm('Deseja deletar este produto?')
+        
+    }
     return(
         <>         
             
@@ -27,7 +32,11 @@ const IndexProduto = (props)=>{
                             <img src={require('../../Imagens/default.jpg').default} className="card-img-top" alt="..." />
                             <div className="">
                                 <p className="text-center lead">Clique para mais informações.</p>
-                                <button className="btn btn-sm p-botao abrir-modal" onClick={abrirModal}>DETALHES</button>                           
+                                <div className='d-flex'>
+                                {Autenticacao() && <button className='btn btn-danger' onClick={deletar}>Deletar</button>}
+                                    <button className="btn btn-sm p-botao abrir-modal m-auto" onClick={abrirModal}>DETALHES</button> 
+                                    
+                                    </div>
                             </div>  
                         </div>
                     </div>

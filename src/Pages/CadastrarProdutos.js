@@ -34,7 +34,8 @@ export default function CadastrarProdutos() {
                         </div>
                         <div className="mb-3">
                             <label className="form-label text-white">CATEGORIA</label>
-                            <select className="form-select-lg select form-control" name="categoria">
+                            <select className="form-select-lg select form-control" name="categoria"
+                            id='categoria'>
                                 <option selected>Selecionar categoria</option>
                                 <option value="Produto de Limpeza">Produtos de Limpeza</option>
                                 <option value="Vestuario">Vestuário</option>
@@ -54,7 +55,7 @@ export default function CadastrarProdutos() {
                         <div className="mb-3"> 
                             <label className="form-label text-white">VALOR</label>
                             <div className="input-group mb-3">
-                                <input type="text" name="valor" className="form-control" placeholder="PREÇO DO PRODUTO" aria-label="Username" aria-describedby="basic-addon1" />
+                                <input type="text" name="valor" id='valor' className="form-control" placeholder="PREÇO DO PRODUTO" aria-label="Username" aria-describedby="basic-addon1" />
                                 <span className="input-group-text" id="basic-addon1">$</span>
                             </div>
                         </div>

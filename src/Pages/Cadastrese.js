@@ -59,15 +59,16 @@ const Cadastrese = () => {
                     <div className="mb-3">
                         <label for="email" className="form-label text-dark font-weight-bold">EMAIL</label>
                         <input type="text" className="form-control" id="email" name="email" required />
+                        </div>
+                        <div className="mb-3">
+                        <label for="senha" className="form-label text-dark font-weight-bold">SENHA</label>
+                        <input type="password" className="form-control" id="senha" name="senha" />
                     </div>
                     <div className="mb-3">
                         <label for="confirmaemail" className="form-label text-dark font-weight-bold">CONFIRMAR EMAIL</label>
                         <input type="text" className="form-control" id="confirmaemail" name="confirmaemail" />
                     </div>
-                    <div className="mb-3">
-                        <label for="senha" className="form-label text-dark font-weight-bold">SENHA</label>
-                        <input type="password" className="form-control" id="senha" name="senha" />
-                    </div>
+                    
                     <div className="mb-3 text-center">
                         <button type="submit" className="btn btn-light text-dark font-weight-bold" onClick={Enviar} >CADASTRAR</button>  
                     </div>
