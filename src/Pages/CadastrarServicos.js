@@ -29,7 +29,7 @@ export default function CadastrarServicos() {
                     </div>
                     <div className='mb-3'>
                         <label for='nome' className='form-label text-white'>CATEGORIA</label>
-                        <select className='form-select-lg select form-control' name='categoria'>
+                        <select className='form-select-lg select form-control' name='categoria' id='categoria'>
                             <option selected>Selecionar categoria</option>
                             <option valeu='cabeleireira'>Cabeleireira</option>
                             <option valeu='limpeza'>Limpeza</option>
@@ -49,7 +49,7 @@ export default function CadastrarServicos() {
                     <div className='mb-3'>
                         <label className='form-label text-white'>Valor</label>
                         <div className='input-group mb-3'>
-                            <input type='text' name='valor' className='form-control' placeholder='PREÇO DO SERVIÇO' arial-label="Username" arial-describedby='basic-addon1' />
+                            <input type='text' name='valor' id='valor' className='form-control' placeholder='PREÇO DO SERVIÇO' arial-label="Username" arial-describedby='basic-addon1' />
                             <span className='input-group-text' id='basic-addon1'>$</span>
                         </div>
                     </div>
