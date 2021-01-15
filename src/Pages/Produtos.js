@@ -28,43 +28,30 @@ const Produtos = () => {
     return (
         <>
             <Menu/>
-                {/*<h3 className="text-center mt-3">Selecionar categoria aqui</h3>
-                <div className="d-flex box">
-
-                    <section id="team">
-                        <div className="container-fluid my-3 py-5">   
-                            <div className="row row-cols-2">      
-                                
-                            </div>
-                        </div>
-                    </section>
-                        
-                </div>        
-                    <button onClick={pegarProdutos}>Ver</button>*/}
     
-    <div className="jumbotron image">
-        <h5 className="text-center">ALGUMA COISA AQUI TIPO FOTO COM DESCRIÇÃO DE ALGO</h5>
-    </div>
-
-    <div className="container-fluid">
-        <div className="row">
-            <div className="col-md-4 col-lg-2 col-sm-12 col-xs-12">
-                <div className="mb-2 boxBotao">
-                    <button className="btn botaoCategoria">Artesanato</button>
-                    <button className="btn botaoCategoria">Bijouteria</button>
-                    <button className="btn botaoCategoria">Beleza</button>
-                    <button className="btn botaoCategoria">Limpeza</button>
-                </div>
-                <div className="border mt-5">
-                    <img className="imgCategoria" src={require('../Imagens/teste.jpg').default}/>
-                </div>
+            <div className="jumbotron image">
+                <h5 className="text-center">ALGUMA COISA AQUI TIPO FOTO COM DESCRIÇÃO DE ALGO</h5>
             </div>
 
-            <div className="col-md-8 col-lg-10 col-xs-12 d-flex box-produto mb-5" id="">
-                {action && action.map(mapear => <IndexProduto username={mapear.username} produto={mapear.produto}   valor={mapear.valor} descricao={mapear.descricao} />)}
+            <div className="container-fluid">
+                <div className="row">
+                    <div className="col-md-4 col-lg-2 col-sm-12 col-xs-12">
+                        <div className="mb-2 boxBotao">
+                            <button className="btn botaoCategoria">Artesanato</button>
+                            <button className="btn botaoCategoria">Bijouteria</button>
+                            <button className="btn botaoCategoria">Beleza</button>
+                            <button className="btn botaoCategoria">Limpeza</button>
+                        </div>
+                        <div className="border mt-5">
+                            <img className="imgCategoria" src={require('../Imagens/teste.jpg').default}/>
+                        </div>
+                    </div>
+
+                    <div className="col-md-8 col-lg-10 col-xs-12 d-flex box-produto mb-5" id="">
+                        {action && action.map(mapear => <IndexProduto username={mapear.username} produto={mapear.produto}   valor={mapear.valor} descricao={mapear.descricao} />)}
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
 
         </>
     )

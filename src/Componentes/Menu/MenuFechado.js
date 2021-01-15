@@ -3,7 +3,6 @@ import { FiHome } from "react-icons/fi";
 import { FaStoreAlt} from "react-icons/fa";
 import { MdContactMail } from "react-icons/md";
 import { ImExit, ImCog } from "react-icons/im";
-import { BiCertification } from "react-icons/bi";
 import { BsPeople } from "react-icons/bs";
 
 
