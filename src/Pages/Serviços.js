@@ -1,47 +1,52 @@
 import Menu from "../Componentes/Menu/Menu"
-import IndexServico from "../Componentes/servicos/indexServicos"
+//import IndexServico from "../Componentes/servicos/indexServicos"
 import './Css/Servicos.css';
+import { GoGrabber } from "react-icons/go";
+import { AiOutlineFacebook, AiFillTwitterSquare, AiOutlineInstagram } from "react-icons/ai";
 import React from 'react'
 
 const Servicos = () => {
-    const [action, setAction] = React.useState(``);
-    const [user, setUser] = React.useState(``);
-
-    async function pegarServico(){
-        const url = await fetch(`http://localhost/API/api/servicos.php`);
-        const urlUser = await fetch(`http://localhost/API/api/user.php`);
-        
-        const urlResponse = await url.json();
-        const userResponse = await urlUser.json();
-
-        setAction(urlResponse);
-        console.log(action);
-
-        setUser(userResponse);
-        console.log(user);
-    }
+    
      return (
-            <>
-                <Menu/>
-                    <h1 className='text-center mt-3'>Serviços</h1>
-                    <h3 className='text-center mt-3'>Selecionar categoria aqui</h3>
-                    <div className='d-flex box'>
-                        <section id='team'>
-                            <div className='container-fluid my-3 py-5'>
-                                <div className='row row-cols-2'>
-                                    {action && action.map(mapear => <IndexServico categoria={mapear.categoria} 
-                                    produto={mapear.produto} valor={mapear.valor} descricao={mapear.descricao} anunciante={mapear.nome} />)}
-                                
-                                </div>
-                            
+    <>
+              
+        <Menu/> 
+            <div className="">                
+                <div className="row">
+                    <div className="col-md-4 col-lg-2 col-sm-12 col-xs-12 mb-3 wrapperServico">
+                        <div className="sidebarServico"> 
+
+                            <div className="dropdown text-center">
+                                <button className="btn btn-primary dropdown-toggle mb-3" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <span>Lista de Categoria</span>
+                                </button>
+                                <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <li><a className="dropdown-item nav-link" href="#"><GoGrabber className="fc"/>Manicure</a></li>
+                                    <li><a className="dropdown-item nav-link" href="#"><GoGrabber className="fc"/>Pedicure</a></li>
+                                    <li><a className="dropdown-item nav-link" href="#"><GoGrabber className="fc"/>Babás</a></li>
+                                    <li><a className="dropdown-item nav-link" href="#"><GoGrabber className="fc"/>Limpeza</a></li>
+                                    <li><a className="dropdown-item nav-link" href="#"><GoGrabber className="fc"/>Professoras</a></li>
+                                    <li><a className="dropdown-item nav-link" href="#"><GoGrabber className="fc"/>Costureiras</a></li>
+                                </ul>
                             </div>
-                        
-                        </section>
-                    
+                            
+                           <div className="redeSocial border-bottom p-2">
+                                <a href="#"><AiOutlineFacebook /></a>
+                                <a href="#"><AiFillTwitterSquare /></a>
+                                <a href="#"><AiOutlineInstagram /></a>
+                            </div>                      
+                        </div>
                     </div>
-                    <button onClick={pegarServico}>Ver</button>
-            </>
-        )
+
+                    <div className="col-md-8 col-lg-10 col-xs-12 d-flex box-servico mb-5" id="">  
+                        {/*aqui vai os produtos de IndexProdutos*/}
+                    </div>
+                </div>
+            </div>
+
+    </>
+           
+    )
 
 }
 

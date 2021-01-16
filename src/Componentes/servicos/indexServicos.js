@@ -2,54 +2,29 @@ import './indexServicos.css';
 import React from 'react';
 
 const IndexServicos = (props) => {
-    function abrirModal(){
-        document.getElementById('m-modal').style.top ="0";
-    }
-
-    function fecharModal(){
-        document.getElementById('m-modal').style.top = '-100%';
-    }
+    
 
     return(
-        <>
-            <div className="col mb-3">
-                <div className="card card-box">
-                    <div className="card-body">
-                        <div className="text-center">
-                            <img src={require('../../Imagens/icon.jpg').default}
-                            className="img-fluid rounded-circle w-50 mb-3" alt="..." />
-                            <h5>Ana Maria</h5>
-                            <hr clasName="barra"></hr>
-                            <h6>{props.produto}</h6>
-                        </div>
-                        <div>
-                            <img src={require("../../Imagens/default.jpg").default} className="card-img-top" alt="..."/>
-                            <p className='card-text'>Anuciante: {props.anunciante}</p>
-                            <div className="">
-                                <p className="text-center lead">Clique para mais informações.</p>
-                                <button className="btn btn-sm p-botao abrir-modal"
-                                onClick={abrirModal}>Detalhes</button>
-                            </div>
+            <>
+                <div className="caixa-servico">
+                    <img src={require('../../Imagens/Produtos/produto1.jpg').default} className="border imgServico" alt="..."/>
+                    <div className="card-body border desc-servico">
+                        <div className="text-break">
+                            <h4 className="card-title">{props.produto}</h4>
+                            <h6 className="card-substitle  text-danger">${props.valor}</h6>
+                            <div className="mb-3">
+                                <span className="text-muted">{props.username}</span><br></br>
+                                <span className="text-muted">{props.email}</span><hr></hr>
+                            </div> 
+                            <p className="card-text">{props.descricao}</p>
+                        </div>                      
+                        <div className="botaoServico">
+                            <button className="btn btn-danger m-1 btn-sm">Deletar</button>
+                            <button className="btn btn-primary btn-sm">Detalhes</button>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div className="fundo-modal" id="m-modal">
-                <div className="m-modal">
-                    <span className='fechar' onClick={fecharModal}>
-                        x
-                    </span>
-                    <div className='card-body'>
-                        <h5 className='card-title'>Categoria: </h5>
-                        <p className='card-text'>Nome do produto: </p>
-                        <p className='card-text'>Valor: {props.valor}</p>
-                        <p className='card-text'>Descrição do produto: {props.descricao} </p>
-
-                    </div>
-                </div>
-            </div>
-        </>
+            </>
     );
 
 }

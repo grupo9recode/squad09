@@ -1,7 +1,120 @@
-.card{
-    width: 17rem;
+.box-servico{
+    flex-wrap: wrap;
+    margin-top: 10px;
 }
 
-.box{
-    flex-wrap: wrap;
+.caixa-servico{
+    margin: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.imgServico{
+    width: 100%;
+    height: 100%;
+    margin-top: 60px;
+}
+
+.boxBotao{
+    text-align: center;
+}
+
+.botaoServico{
+    background-color: pink;
+    width: 100%;
+    margin: 3px 3px 3px 0px ;
+}
+
+.botaoServico:hover{
+    box-shadow: 2px 2px 2px rgba(128, 128, 128, 0.534);
+}
+
+.caixa-servico .imgServico{
+    width: 300px!important;
+    height:250px!important;
+    width: auto;
+    height: auto;
+}
+
+.caixa-servico{
+    background-color: #d8d8d87a;
+}
+
+.desc-servico{
+    width: 300px!important;
+    width: auto;
+    height: auto;
+}
+
+.botaoServico{
+    text-align: center;
+}
+
+.w-100{
+    height: 50%;
+}
+
+/* categoria produtos */
+
+
+
+.wrapperServico .sidebarServico{    
+    background-color: #ffffffa1;
+    width: 100%px;
+    height: 100%;
+    padding: 30px 0;
+}
+
+.wrapperServico .sidebarServico h5{
+    color: rgb(2, 2, 2);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.wrapperServico .sidebarServico ul li{
+    padding: 15px;
+   
+}
+
+.wrapperServico .sidebarServico ul li a{
+    color: #000000;
+    display: block;
+    background-color: pink;
+    border-radius: 15px;
+}
+
+.wrapperServico .sidebarServico .fc{
+    
+    width: 30px;
+    height: 25px;
+}
+
+.wrapperServico .sidebarServico ul li:hover{
+    
+}
+
+.wrapperServico .sidebarServico ul li:hover a{
+    color: #fff;
+}
+
+.wrapperServico .sidebarServico .redeSocial{
+    position: absolute;
+    border-bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.wrapperServico .sidebarServico .redeSocial a{
+    width: 40px;
+    background: #594f8d;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 5px;
+    color: #dbdbdf;
+    border-top-left-radius: 5px;
+    border-top-left-radius: 5px;
 }
