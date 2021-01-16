@@ -1,5 +1,5 @@
 
-.itens-minha-conta a{
+/*.itens-minha-conta a{
     font-size: 22px;
     color: black;
     text-decoration: none;
@@ -15,11 +15,33 @@
  .box-minhas-vendas a{
      text-decoration: none;
  }
- hr{
+ /*hr{
      border-color: #000;
  }
  .card{
      width: 18rem;
      margin: 0 auto;
+ }*/
+
+ .iconMinhaConta{
+     width: 100px;
+     height: 100px;
  }
  
+ .fiEdit{
+    width: 25px;
+    height: 25px;
+ }
+
+ .boxPerfil{
+     box-shadow: 3px 7px 3px 3px rgba(0, 0, 0, 0.349);
+ }
+
+ .iconContatoConta{
+     width: 30px;
+     height: 30px;
+     margin: 10px;
+     background-color: #fff;
+     border-radius: 10px;
+     padding: 3px;
+ }
