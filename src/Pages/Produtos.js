@@ -2,6 +2,9 @@ import Menu from "../Componentes/Menu/Menu"
 import IndexProduto from '../Componentes/Produtos/IndexProdutos';
 import './Css/Produtos.css';
 import React from 'react';
+import { GoGrabber } from "react-icons/go";
+import { AiOutlineFacebook, AiFillTwitterSquare, AiOutlineInstagram } from "react-icons/ai";
+
 
 
 const Produtos = () => {
@@ -35,15 +38,28 @@ const Produtos = () => {
 
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-md-4 col-lg-2 col-sm-12 col-xs-12">
-                        <div className="mb-2 boxBotao">
-                            <button className="btn botaoCategoria">Artesanato</button>
-                            <button className="btn botaoCategoria">Bijouteria</button>
-                            <button className="btn botaoCategoria">Beleza</button>
-                            <button className="btn botaoCategoria">Limpeza</button>
-                        </div>
-                        <div className="border mt-5">
-                            <img className="imgCategoria" src={require('../Imagens/teste.jpg').default}/>
+                    <div className="col-md-4 col-lg-2 col-sm-12 col-xs-12 mb-3 wrapper">
+                        <div className="sidebar">
+                                <h5>Categorias</h5>
+                                <ul>
+                                    <li><a href="#" className="nav-link"><GoGrabber className="fc"/>Artesanato</a></li>
+                                    <li><a href="#" className="nav-link"><GoGrabber className="fc"/>Limpeza</a></li>
+                                    <li><a href="#" className="nav-link"><GoGrabber className="fc"/>Beleza</a></li>
+                                    <li><a href="#" className="nav-link"><GoGrabber className="fc"/>Comidas</a></li>
+                                    <li><a href="#" className="nav-link"><GoGrabber className="fc"/>Vestuário</a></li>
+                                    <li><a href="#" className="nav-link"><GoGrabber className="fc"/>Eletronicos</a></li>
+                                </ul>
+
+                                <div className="redeSocial ">
+                                    <a href="#"><AiOutlineFacebook /></a>
+                                    <a href="#"><AiFillTwitterSquare /></a>
+                                    <a href="#"><AiOutlineInstagram /></a>
+                                </div>
+
+                                <div>
+                                    <img src={require('../Imagens/teste.jpg').default} className="imgCategoria"/>
+                                </div>
+                            
                         </div>
                     </div>
 
