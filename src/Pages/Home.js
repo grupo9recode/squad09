@@ -6,8 +6,7 @@ function Home() {
         <>
         <Menu />
         <div className="corpo">
-<<<<<<< HEAD
-            <Menu />
+            
             
             
             <div className="container ">
@@ -26,15 +25,6 @@ function Home() {
                         <p>
                             O projeto foi desenvolvido para
                             </p>
-=======
-            <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
-                <div className="carousel-inner">
-                    <div className="carousel-item active">
-                        <img className="d-block  imgHome" src={require('../Imagens/unidas.png').default} alt="First slide" />
-                    </div>
-                    <div className="carousel-item">
-                        <img className="d-block  imgHome" src={require('../Imagens/favela.png').default} alt="Second slide" />
->>>>>>> 13dc84f4f56f67d4c27054f4ed55f92c4fdf9ed7
                     </div>
                     <div className="carousel-item">
                         <img className="d-block  imgHome" src={require('../Imagens/bebe.png').default} alt="Third slide" />
