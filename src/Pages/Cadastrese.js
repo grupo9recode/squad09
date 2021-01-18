@@ -49,7 +49,7 @@ const Cadastrese = () => {
                     <div className="mb-3">
                         <label for="cpf" className="form-label text-dark font-weight-bold">CPF</label>
                         <input type="number" maxlength="11" className="form-control" id="cpf" name="cpf" />
-                        <span className="text-danger text-dark font-weight-bold">Digite apenas os números</span>
+                        <span className="text-white ">Digite apenas os números</span>
                     </div>
                    
                     
@@ -63,11 +63,12 @@ const Cadastrese = () => {
                         </div>
                         <div className="mb-3">
                         <label for="senha" className="form-label text-dark font-weight-bold">SENHA</label>
-                        <input type="password" className="form-control" id="senha" name="senha" />
+                        <input type="password" maxlength="8" className="form-control" id="senha" name="senha" /><span className="text-white ">Mínimo de 8 caracteres</span>
                     </div>
                     <div className="mb-3">
                         <label for="confirmaemail" className="form-label text-dark font-weight-bold">CONFIRMAR EMAIL</label>
-                        <input type="text" className="form-control" id="confirmaemail" name="confirmaemail" />
+                            <input type="password" maxlength="8" className="form-control" id="confirmaemail" name="confirmaemail" />
+                            <span className="text-white ">Mínimo de 8 caracteres</span>
                     </div>
                     
                     <div className="mb-3 text-center">

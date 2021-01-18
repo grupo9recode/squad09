@@ -7,9 +7,10 @@ const Contato = () => {
     return (
         <>
             <Menu />
-            <a href='/'><img src={require('../Imagens/onceicao.png').default} alt="" width="320"/></a>
-            <div className="container2 w-75 p-3">
-            <div className='d mt-5  p-3  border box-menu'>
+            <div className='container container-fluid d-flex mt-5'>
+            <a href='/' className='imagem-contato mr-5'><img src={require('../Imagens/onceicao.png').default} alt="" width="300"/></a>
+            
+            <div className=' p-3  border box-menu'>
                 <h1 className='text-center text-dark font-weight-bold'>ENTRE EM CONTATO CONOSCO</h1>
                 <hr/>
                 <form action='' method=''>

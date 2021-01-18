@@ -9,3 +9,8 @@
   float:right;
   margin-top: -40px
 }
+@media(max-width:780px){
+  .imagem-contato{
+    display: none;
+  }
+}

@@ -3,6 +3,11 @@
     color: black;
     text-align: center;
 }
+.icons{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+}
 
 @media(min-width:700px){
     .menu-links{
@@ -10,8 +15,3 @@
     }
 }
 
-.icons{
-    width: 30px;
-    height: 30px;
-    margin: 10px;
-}

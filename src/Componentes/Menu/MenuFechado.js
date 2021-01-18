@@ -17,23 +17,23 @@ const MenuFechado = () => {
             <div className="collapse navbar-collapse menu-links" id="navbarNav">
                 <ul className="navbar-nav">
                     <li className="nav-item active">
-                        <a className="nav-link text-light" href="/" to='/'><FiHome className="icons"/><span className="sr-only">(current)</span></a>
+                        <a className="nav-link text-light" href="/" to='/'><FiHome className="icons"/>HOME<span className="sr-only">(current)</span></a>
                     </li>
                     <li className="nav-item active">
-                        <a className="nav-link text-light" href="/produtos" to='/produtos'><FaStoreAlt className="icons"/><span className="sr-only">(current)</span></a>
+                        <a className="nav-link text-light" href="/produtos" to='/produtos'><FaStoreAlt className="icons"/>PRODUTOS<span className="sr-only">(current)</span></a>
                     </li>
                     <li className="nav-item active">
-                        <a className="nav-link text-light" href="/servicos" to='/servicos'><BsPeople className="icons" /><span className="sr-only">(current)</span></a>
+                        <a className="nav-link text-light" href="/servicos" to='/servicos'><BsPeople className="icons" />SERVIÇOS<span className="sr-only">(current)</span></a>
                         </li>
                         <li className="nav-item active">
-                        <a className="nav-link text-light" href="/minhaconta" to='/minhaconta'><ImCog className="icons" /><span className="sr-only">(current)</span></a>
+                        <a className="nav-link text-light" href="/minhaconta" to='/minhaconta'><ImCog className="icons" />MINHA CONTA<span className="sr-only">(current)</span></a>
                     </li>
                     <li className="nav-item active">
-                        <a className="nav-link text-light" href="/contato" to='/contato'><MdContactMail className="icons" /> <span className="sr-only">(current)</span></a>
+                        <a className="nav-link text-light" href="/contato" to='/contato'><MdContactMail className="icons" />CONTATO<span className="sr-only">(current)</span></a>
                     </li>
                     
                     <li className="nav-item active">
-                        <a className="nav-link text-light" href='#' onClick={Sair}><ImExit className="icons"/><span className="sr-only">(current)</span></a>
+                        <a className="nav-link text-light" href='#' onClick={Sair}><ImExit className="icons"/>SAIR<span className="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>

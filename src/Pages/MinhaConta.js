@@ -54,16 +54,16 @@ const MinhaConta = () => {
                                 <div className="row text-center mb-3">
                                     <div className="col-sm-4">
                                         <p className="font-weight-bold">Cadastrar Produtos</p>
-                                        <h6 className="text-muted"><a href="/cadastrarprodutos"><BiFoodMenu/></a></h6>
+                                        <h6 className="text-muted"><a href="/cadastrarprodutos"><BiFoodMenu className='icon-minha-conta'/></a></h6>
                                     </div>
                                     <div className="col-sm-4">
                                         <p className="font-weight-bold">Cadastrar Serviço</p>
-                                        <h6 className="text-muted"><a href="/cadastrarservicos"><BiBriefcase/></a></h6>
+                                        <h6 className="text-muted"><a href="/cadastrarservicos"><BiBriefcase className='icon-minha-conta'/></a></h6>
                                     </div>
 
                                     <div className="col-sm-4">
                                         <p className="font-weight-bold">Editar Dados</p>
-                                        <h6 className="text-muted"><a href="/editardados"><BiCommentEdit/></a></h6>
+                                        <h6 className="text-muted"><a href="/editardados" ><BiCommentEdit className='icon-minha-conta'/></a></h6>
                                     </div>
                                 </div>
                                 
