@@ -1,11 +1,38 @@
 import Menu from "../Componentes/Menu/Menu"
 import './Css/Login.css'
+<<<<<<< HEAD
+import React from 'react'
+=======
 
 
 
+>>>>>>> cfe98fed497676ea960198c7195d5cd40a657e92
 const Login = () => {
-    const validar=()=> {
+    
+
+    // puxar o bd e tentar validar
+    const [action, setAction] = React.useState([]);
+    
+    React.useEffect(async()=>{
+
+        const url = await fetch('http://localhost:3005/login');    
+        const urlResponse = await url.json();
         
+        console.log(JSON.stringify(urlResponse));
+        setAction(urlResponse);
+        
+
+    }, []);
+    
+    console.log(action[0])
+    let validacao = action.filter(item => item.email == document.getElementById("email").value)
+        console.log(validacao)
+    
+    const validar=()=> {
+        // document.getElementById("email").value !== '' && document.getElementById("senha").value !== '' 
+        
+        let validacao = action.filter(item => item.email === document.getElementById("email").value)
+        console.log(validacao[0])
         if (document.getElementById("email").value !== '' && document.getElementById("senha").value !== '') {
             alert('Login efetuado!')
             localStorage.setItem('key', true);
@@ -18,7 +45,6 @@ const Login = () => {
     if (localStorage.getItem('key')) {
         window.location='/minhaconta'
     }
-    
     return (
         <>
             <Menu/>
@@ -45,7 +71,8 @@ const Login = () => {
                                 <button type="submit" onClick={validar} className="btn btn-light text-dark font-weight-bold">ENTRAR</button>
                         </div>   
                     </div>
-                </form>
+                    </form>
+                    
                 </div>
             </div>
         </>
