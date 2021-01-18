@@ -2,6 +2,8 @@
 .box-produto{
     flex-wrap: wrap;
     margin-top: 10px;
+    position: static;
+    width: 100%;   
 }
 
 .caixa-produto{
@@ -9,7 +11,11 @@
     margin-left: auto;
     margin-right: auto;
     align-items: center;
+    box-shadow: 3px 5px 3px rgba(0, 0, 0, 0.199);
+    border-radius: 10px;
+    background-color: white;
 }
+
 
 .imgCategoria{
     width: 100%;
@@ -38,10 +44,6 @@
     height: auto;
 }
 
-.caixa-produto{
-    background-color: #d8d8d87a;
-}
-
 .desc-produto{
     width: 300px!important;
     width: auto;
@@ -52,9 +54,6 @@
     text-align: center;
 }
 
-.w-100{
-    height: 50%;
-}
 
 /* categoria produtos */
 
@@ -113,8 +112,6 @@
     border-top-left-radius: 5px;
     border-top-left-radius: 5px;
 }
-
-
 
 
 

@@ -1,5 +1,9 @@
 import Menu from "../Componentes/Menu/Menu"
 import './Css/Login.css'
+<<<<<<< HEAD
+=======
+
+>>>>>>> 13dc84f4f56f67d4c27054f4ed55f92c4fdf9ed7
 import React from 'react'
 
 const Login = () => {
