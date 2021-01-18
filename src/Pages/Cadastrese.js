@@ -33,6 +33,7 @@ const Cadastrese = () => {
         <>
         
             <Menu/>
+            <center><a href='/'><img src={require('../Imagens/favela.png').default} width="800" class="img-fluid" alt="Imagem responsiva"/></a></center>
             <div className="container ">
                 <div className="mt-5 mb-5 p-3  border box-menu">
                     <h1 className="text-center text-dark font-weight-bold ">CADASTRE-SE</h1><hr></hr>

@@ -1,6 +1,12 @@
 import Menu from "../Componentes/Menu/Menu"
 import './Css/Login.css'
+<<<<<<< HEAD
 import React from 'react'
+=======
+
+
+
+>>>>>>> cfe98fed497676ea960198c7195d5cd40a657e92
 const Login = () => {
     
 
@@ -42,7 +48,8 @@ const Login = () => {
     return (
         <>
             <Menu/>
-            <div className="container ">
+            <a href='/'><img src={require('../Imagens/imponente.png').default} alt="" width="300"/></a>
+            <div className="container1 w-75 p-3">
                 <div className="mt-5  p-3 border box-menu">
                     <h1 className="text-center text-dark font-weight-bold">FAZER LOGIN</h1>
                     <hr/>

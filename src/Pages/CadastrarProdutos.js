@@ -40,18 +40,18 @@ export default function CadastrarProdutos() {
             <Menu/>
             <div className="container">
                 <div className="mt-5 mb-5 p-3 border box-cadastro">
-                        <h1 className="text-center text-white">Cadastrar Produto</h1><hr></hr>
+                        <h1 className="text-center text-dark font-weight-bold">Cadastrar Produto</h1><hr></hr>
                     <form action="/produtos" className="form-group" onSubmit={enviarDados}>
                         <div className="mb-3">
-                            <label for="nome" className="form-label text-white">SEU USERNAME</label>
+                            <label for="nome" className="form-label text-dark font-weight-bold">SEU USERNAME</label>
                             <input type="text" className="form-control" id="username" name="username" value={form.username} onChange={pegarDados}/>
                         </div>
                         <div className="mb-3">
-                            <label for="nome" className="form-label text-white">PRODUTO</label>
+                            <label for="nome" className="form-label text-dark font-weight-bold">PRODUTO</label>
                             <input type="text" className="form-control" id="produto" name="produto" value={form.produto} onChange={pegarDados}/>
                         </div>
                         <div className="mb-3">
-                            <label className="form-label text-white">CATEGORIA</label>
+                            <label className="form-label text-dark font-weight-bold">CATEGORIA</label>
                             <select className="form-select-lg select form-control" name="categoria" id='categoria' value={form.categoria} onChange={pegarDados}>
                                 <option selected>Selecionar categoria</option>
                                 <option value="Produto de Limpeza">Produtos de Limpeza</option>
@@ -61,7 +61,7 @@ export default function CadastrarProdutos() {
                         </div>
                         
                         <div className="mb-3">
-                        <label className="form-label text-white">IMAGEM</label>
+                        <label className="form-label text-dark font-weight-bold">IMAGEM</label>
                         <div className="custom-file">
                             <input type="file" className="custom-file-input" id="validatedCustomFile"/>
                             <label className="custom-file-label" for="validatedCustomFile">Escolha o arquivo</label>
@@ -70,7 +70,7 @@ export default function CadastrarProdutos() {
                         </div>
 
                         <div className="mb-3"> 
-                            <label className="form-label text-white">VALOR</label>
+                            <label className="form-label text-dark font-weight-bold">VALOR</label>
                             <div className="input-group mb-3">
                                 <input type="text" name="valor" id="valor" className="form-control" placeholder="PREÇO DO PRODUTO" aria-label="Username" aria-describedby="basic-addon1" value={form.valor} onChange={pegarDados}/>
                                 <span className="input-group-text" id="basic-addon1">$</span>
@@ -78,7 +78,7 @@ export default function CadastrarProdutos() {
                         </div>
                         
                         <div className="mb-3">
-                            <label className="form-label text-white">DESCRIÇÃO</label>
+                            <label className="form-label text-dark font-weight-bold">DESCRIÇÃO</label>
                             <div className="form-floating">
                                 <textarea className="form-control textarea" name="descricao" id="descricao" value={form.descricao} onChange={pegarDados}></textarea>
                             </div>

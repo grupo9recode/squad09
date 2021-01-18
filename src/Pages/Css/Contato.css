@@ -1,0 +1,11 @@
+.box-menu{
+    background-color:rgba(228, 126, 126, 0.932) ;
+    border-radius: 8px;
+    
+}
+
+.container2{
+  display:inline block;
+  float:right;
+  margin-top: -40px
+}
