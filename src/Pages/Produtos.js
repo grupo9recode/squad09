@@ -5,6 +5,7 @@ import './Css/CardsProdutos.css';
 import React from 'react';
 import { GoGrabber } from "react-icons/go";
 import { AiOutlineFacebook, AiFillTwitterSquare, AiOutlineInstagram } from "react-icons/ai";
+import RodapeGeral from "../Componentes/Rodape/RodapeGeral";
 
 
 
@@ -51,7 +52,7 @@ const Produtos = () => {
                     </div>
                 </div>
             </div>
-
+<RodapeGeral/>
         </>
     )
 }

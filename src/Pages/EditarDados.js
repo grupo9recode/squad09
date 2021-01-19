@@ -1,5 +1,5 @@
 import Menu from "../Componentes/Menu/Menu"
-
+import RodapeGeral from '../Componentes/Rodape/RodapeGeral'
 const EditarDados = () => {
     return (
         <>
@@ -38,6 +38,7 @@ const EditarDados = () => {
                 </form>
                 </div>
             </div>
+            <RodapeGeral/>
         </>
     )
 }

@@ -1,5 +1,6 @@
 import Menu from "../Componentes/Menu/Menu"
 import React from 'react'
+import RodapeGeral from '../Componentes/Rodape/RodapeGeral'
 export default function CadastrarServicos() {
 
     // const cadastrarServicos = async (evento) => {
@@ -103,6 +104,8 @@ export default function CadastrarServicos() {
                     {response && response.ok && alert("Pedido enviado")}
                 </div>
             </div>
+        <RodapeGeral/>    
         </>
+
     )
 }

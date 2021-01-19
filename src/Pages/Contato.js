@@ -1,7 +1,7 @@
 import Menu from "../Componentes/Menu/Menu"
 import React from 'react'
 import './Css/Contato.css'
-
+import RodapeGeral from '../Componentes/Rodape/RodapeGeral'
 
 const Contato = () => {
     return (
@@ -33,7 +33,7 @@ const Contato = () => {
                 </form>
                 </div>
                 </div>
-                
+                <RodapeGeral/>
         </>
     )
 }

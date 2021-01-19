@@ -5,10 +5,10 @@ import { MdContactMail } from "react-icons/md";
 const MenuAberto = () => {
     return (
         <>
-            <nav className="navbar navbar-expand-lg navbar-dark menu-container">
-            <a href='/'><img src={require('../../Imagens/mao.png').default} alt="" width="50" /></a>
+            <nav className="navbar navbar-expand-lg navbar-dark menu-container " id='menu'>
+            <a href='/'><img src={require('../../Imagens/mao.png').default} alt="Logo de mãos dadas" width="50" /></a>
                 <button className="navbar-toggler text-center" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon m-auto"></span>
+                    <span className="navbar-toggler-icon m-auto "></span>
                 </button>
                 <div className="collapse navbar-collapse menu-links" id="navbarNav">
                     <ul className="navbar-nav">

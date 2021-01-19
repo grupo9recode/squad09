@@ -3,6 +3,7 @@ import './Css/CadastrarProdutos.css';
 import { FaStoreAlt } from "react-icons/fa";
 //import Rodape from '../Componentes/Rodape/Rodape';
 import React from 'react';
+import RodapeGeral from '../Componentes/Rodape/RodapeGeral'
 
 export default function CadastrarProdutos() {
 
@@ -93,7 +94,8 @@ export default function CadastrarProdutos() {
                     <div className="social-media">
                     </div>
                 </div>
-                </div>
+            </div>
+            <RodapeGeral/>
             
         </>
     )

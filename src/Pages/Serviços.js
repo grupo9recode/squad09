@@ -4,6 +4,7 @@ import './Css/Servicos.css';
 import { GoGrabber } from "react-icons/go";
 import { AiOutlineFacebook, AiFillTwitterSquare, AiOutlineInstagram } from "react-icons/ai";
 import React from 'react'
+import RodapeGeral from "../Componentes/Rodape/RodapeGeral";
 
 const Servicos = () => {
     
@@ -39,7 +40,7 @@ const Servicos = () => {
                     </div>
                 </div>
             </div>
-
+        <RodapeGeral/>
     </>
            
     )

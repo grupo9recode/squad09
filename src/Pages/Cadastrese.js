@@ -1,5 +1,5 @@
 import Menu from "../Componentes/Menu/Menu"
-
+import RodapeGeral from '../Componentes/Rodape/RodapeGeral'
 const Cadastrese = () => {
     const pegarDados = async(evento) => {
         
@@ -77,6 +77,7 @@ const Cadastrese = () => {
                 </form>
                 </div>
             </div>
+            <RodapeGeral/>
         </>
     )
 }
