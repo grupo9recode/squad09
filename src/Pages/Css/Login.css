@@ -1,7 +1,23 @@
-.box-menu{
-    background-color:rgba(228, 126, 126, 0.932) ;
-    border-radius: 8px;
-    
+.menu{
+
+    border-radius: 20px;
+}
+
+.form-icon{
+  text-align: center;
+    background-color: rgb(155, 53, 53);
+    border-radius: 50%;
+    font-size: 40px;
+    color: white;
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 50px;
+    line-height: 100px;
+}
+
+.botao{
+  background-color: rgb(155, 53, 53);
 }
 
 

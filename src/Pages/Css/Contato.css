@@ -1,7 +1,10 @@
 .box-menu{
     background-color:rgba(228, 126, 126, 0.932) ;
-    border-radius: 8px;
-    
+    border-radius: 8px;  
+}
+
+.contato{
+  width: 80%;
 }
 
 .container2{

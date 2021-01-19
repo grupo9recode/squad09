@@ -47,9 +47,9 @@ const Cadastrese = () => {
         <>
         
             <Menu/>
-            <div className='container'>
-                <div class="registration-form">
-                    <form action="/servicos" className="form-group" onSubmit={pegarDados}>
+            <div className='container bgCadastrese'>
+                <div class="registration-form mx-auto">
+                    <form action="/login" className="form-group" onSubmit={pegarDados}>
                         <div className="form-icon">
                             <span><BiBriefcase/></span>
                         </div>
@@ -78,7 +78,7 @@ const Cadastrese = () => {
                             <input type="password" className="form-control" id="senha" name="senha" value={form.senha} onChange={pegarInfo} />
                         </div>
                         <div className="form-group">
-                            <button type="submit" className="btn btn-block create-account bg-primary" onClick={Enviar}>Cadastrar</button>
+                            <button type="submit" className="btn btn-block create-account" onClick={Enviar}>Cadastrar</button>
                         </div>
                     </form>
                     <div className="social-media">    

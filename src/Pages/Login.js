@@ -2,6 +2,7 @@ import Menu from "../Componentes/Menu/Menu"
 import './Css/Login.css'
 import React from 'react'
 import RodapeGeral from "../Componentes/Rodape/RodapeGeral";
+import {TiFlowChildren} from 'react-icons/ti';
 
 const Login = () => {
     
@@ -45,11 +46,12 @@ const Login = () => {
         <>
             <Menu/>
             
-            <div className="container container-fluid  d-flex p-3 center">
-            <a href='/'><img src={require('../Imagens/imponente.png').default} alt="" width="300" className='imagem-contato mr-5'/></a>
-                <div className="  p-3 border box-menu ">
-                    <h1 className="text-center text-dark font-weight-bold">FAZER LOGIN</h1>
-                    <hr/>
+            <div className="container container-fluid  d-flex  menu">
+            <a href='/'><img src={require('../Imagens/imponente.png').default} alt="" width="300" className='imagem-contato mr-auto'/></a>
+                <div className="p-3 border mt-3 menu bg-white ml-auto mr-auto ">
+                    <div className="form-icon">
+                        <span><TiFlowChildren/></span>
+                    </div>
                 <form action='' method='get' >
                     <div className="mb-3">
                         <label for="email" className="form-label text-dark font-weight-bold">Email</label>
@@ -61,11 +63,11 @@ const Login = () => {
                     </div>
                     <div className="mb-3 d-flex">
                         <div>
-                            <a href="/esqueciminhasenha" className="nav-link text-dark font-weight-bold">Esqueci minha senha</a>
-                            <a href="/cadastrese" className="nav-link text-dark font-weight-bold">Cadastre-se</a>
+                            <a href="/esqueciminhasenha" className="nav-link text-dark btn font-weight-bold">Esqueci minha senha</a>
+                            <a href="/cadastrese" className="nav-link text-dark btn font-weight-bold">Cadastre-se</a>
                         </div>
                         <div className="ml-auto mt-4">
-                                <button type="submit" onClick={validar} className="btn btn-light text-dark font-weight-bold">ENTRAR</button>
+                                <button type="submit" onClick={validar} className="btn botao text-white font-weight-bold">ENTRAR</button>
                         </div>   
                     </div>
                     </form>

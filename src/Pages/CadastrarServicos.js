@@ -95,7 +95,7 @@ export default function CadastrarServicos() {
                             </div>
                         </div>
                         <div className="form-group">
-                            <button type="submit" className="btn btn-block create-account bg-primary">Cadastrar Produto</button>
+                            <button type="submit" className="btn btn-block create-account fundoBotao">Cadastrar Produto</button>
                         </div>
                     </form>
                     <div className="social-media">    

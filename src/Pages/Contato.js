@@ -2,37 +2,40 @@ import Menu from "../Componentes/Menu/Menu"
 import React from 'react'
 import './Css/Contato.css'
 import RodapeGeral from '../Componentes/Rodape/RodapeGeral'
+import {RiContactsBookUploadLine} from 'react-icons/ri'
 
 const Contato = () => {
     return (
         <>
             <Menu />
-            <div className='container container-fluid d-flex mt-5'>
-            <a href='/' className='imagem-contato mr-5'><img src={require('../Imagens/onceicao.png').default} alt="" width="300"/></a>
-            
-            <div className=' p-3  border box-menu'>
-                <h1 className='text-center text-dark font-weight-bold'>ENTRE EM CONTATO CONOSCO</h1>
-                <hr/>
-                <form action='' method=''>
-                    <div className="form- text-dark font-weight-bold">
-                        <label for="nome">NOME</label>
-                        <input type="text" className="form-control" id="nome" placeholder="Digite seu nome" name='nome'/>
+            <div className="container container-fluid  d-flex  contato">
+            <a href='/'><img src={require('../Imagens/onceicao.png').default} alt="" width="300" className='imagem-contato mr-5'/></a>
+                <div className="p-3 border mt-3 menu bg-white ml-auto mr-auto ">
+                    <div className="form-icon">
+                        <span><RiContactsBookUploadLine/></span>
                     </div>
-                    <br/>
-                    <div className="form- text-dark font-weight-bold">
-                        <label for="email">E-MAIL</label>
-                        <input type="email" className="form-control" id="email" name='email' placeholder="name@example.com" />
+                <form action='' method='get' >
+                    <div className="mb-1">
+                        <label for="email" className="form-label text-dark font-weight-bold">EMAIL</label>
+                        <input type="email" className="form-control" id="email" name="email" />
                     </div>
-                    <br/>
-                    <div className="form- text-dark font-weight-bold">
-                        <label for="mensagem">MENSAGEM</label>
-                        <textarea className="form-control" id="mensagem" name='mensagem' rows="3"></textarea>
+                    <div className="mb-1">
+                        <label for="senha" className="form-label text-dark font-weight-bold">EMAIL</label>
+                        <input type="password" className="form-control" id="senha" name="senha" />
                     </div>
-                    <br/>
-                    <button type='submit' className='btn btn-light text-dark font-weight-bold'>ENVIAR</button>
-                </form>
+                    <div className="mb-1 d-flex">
+                        <div className="form- text-dark font-weight-bold">
+                            <label for="mensagem">MENSAGEM</label>
+                            <textarea className="form-control" id="mensagem" name='mensagem' rows="5" cols="100"></textarea>
+                        </div> 
+                    </div>
+                        <div className="ml-auto mt-2">
+                            <button type="submit" className="btn botao text-white font-weight-bold">ENTRAR</button>
+                        </div>  
+                    </form>
+                    
                 </div>
-                </div>
+            </div>
                 <RodapeGeral/>
         </>
     )
