@@ -123,10 +123,7 @@
     
 }
 
-.dropdown:hover .dropdown-list{
-    opacity: 1;
-    visibility: visible;
-}
+
 
 .select{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -150,13 +147,12 @@
 .dropdown-list{
     border-radius: 4px;
     background-color: white;
-    position: absolute;
+    position: relative;
     top: 110%;
     left: 0;
     right: 0;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.2s linear, visibility 0.2s linear;
+    opacity: 1;
+    
 }
 
 .dropdown-list__item{
