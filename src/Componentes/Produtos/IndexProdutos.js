@@ -1,28 +1,35 @@
 import './IndexProdutos.css';
 import React from 'react';
+import { BsInfoCircleFill } from "react-icons/bs";
 
 const IndexProduto = (props)=>{
 
     return(
         <>         
-                <div className="caixa-produto">
-                    <img src={require('../../Imagens/Produtos/produto1.jpg').default} className="border imgProduto" alt="..."/>
-                    <div className="card-body border desc-produto">
-                        <div className="text-break">
-                            <h4 className="card-title">{props.produto}</h4>
-                            <h6 className="card-substitle  text-danger">${props.valor}</h6>
-                            <div className="mb-3">
-                                <span className="text-muted">{props.username}</span><br></br>
-                                <span className="text-muted">{props.email}</span><hr></hr>
-                            </div> 
-                            <p className="card-text">{props.descricao}</p>
-                        </div>                      
-                        <div className="botaoDescricao">
-                            <button className="btn btn-danger m-1 btn-sm">Deletar</button>
-                            <button className="btn btn-primary btn-sm">Detalhes</button>
+                    <div className="card">
+                        <div className="imgBox">
+                            <img className="img-img" src={require('../../Imagens/Produtos/produto2.jpg').default} />
+                        </div>
+                        <div className="details">
+                            <div className="text-content">
+                                <h3 className="textH3">{props.produto}</h3>
+                                <div className="price text-danger">{props.valor}</div>
+                            </div>
+                            <h4 className="textH4">{props.username}</h4>
+                            <button className="btnProduto" type="button">Contato</button>
+                        </div>
+                        <div className="description">
+                            <div className="iconProdu"><BsInfoCircleFill/></div>
+                            <div className="contents">
+                                <h2 className="textH2">Descriçao do produto</h2>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                                <p>
+                                    {props.email}<br/>
+                                    {props.telefone}
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
                         
         </>
     );

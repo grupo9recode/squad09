@@ -47,8 +47,8 @@ const Produtos = () => {
 
                         </div>
                     </div>
-                    <div className="col-md-8 col-lg-10 col-xs-12 d-flex box-produto mb-5" id="">  
-                        {action && action.map(mapear => <IndexProduto username={mapear.username} email={mapear.email} produto={mapear.produto}   valor={mapear.valor} descricao={mapear.descricao} />)}
+                    <div className="col-md-8 col-lg-10 col-xs-12 box-produto mb-5" id="">                     
+                        {action && action.map(mapear => <IndexProduto username={mapear.username} email={mapear.email} produto={mapear.produto}   valor={mapear.valor} descricao={mapear.descricao} telefone={mapear.celular} />)}                       
                     </div>
                 </div>
             </div>
