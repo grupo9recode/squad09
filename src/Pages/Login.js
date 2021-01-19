@@ -1,6 +1,7 @@
 import Menu from "../Componentes/Menu/Menu"
 import './Css/Login.css'
 import React from 'react'
+import RodapeGeral from "../Componentes/Rodape/RodapeGeral";
 
 const Login = () => {
     
@@ -71,6 +72,7 @@ const Login = () => {
                     
                 </div>
             </div>
+            <RodapeGeral/>
         </>
     )
 }

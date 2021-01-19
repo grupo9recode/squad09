@@ -1,5 +1,6 @@
 import Menu from "../Componentes/Menu/Menu";
 import IndexProduto from '../Componentes/Produtos/IndexProdutos';
+import RodapeGeral from '../Componentes/Rodape/RodapeGeral';
 import './Css/Produtos.css';
 import './Css/CardsProdutos.css';
 import React from 'react';
@@ -82,7 +83,7 @@ const Produtos = () => {
                     </div>
                 </div>
             </div>
-
+<RodapeGeral/>
         </>
     )
 }

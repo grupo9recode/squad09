@@ -1,18 +1,13 @@
+import React from 'react';
 import './rodape.css'
 // import icones from '../imagens/icones.png';
 import { FiInstagram, FiFacebook } from 'react-icons/fi';
 import { AiOutlineWhatsApp } from "react-icons/ai";
-function Rodape() {
+function RodapeGeral() {
     return (
 
         <div className="rodape ">
             <div className='d-flex justify-content-around'>
-                <div className='nossoProjeto'>
-                    <h5>Nosso projeto</h5>
-                    <a href='#sobreProjeto'><p>Sobre o projeto</p></a>
-                    <a href='#comoFunciona'><p>Como funciona</p></a>
-                    <a href='#paraQuem'><p>Para quem é</p></a>
-                </div>
                 <div className='nossoSite'>
                     <h5>Nosso site</h5>
                     <a href='/'><p>Home</p></a>
@@ -21,6 +16,7 @@ function Rodape() {
                     <a href='/contato'><p>Contato</p></a>
                     <a href='#menu'><p>Voltar ao topo</p></a>
                 </div>
+                <a href='/'><img src={require('../../Imagens/mao.png').default} class="img-fluid mt-5" id='logoRodape' alt="Logo de mãos dadas" width="100%" /></a>
                 <div className='nossasRedes'>
                     <h5>Nossas redes sociais</h5>
                     <a href='https://www.facebook.com/'><FiFacebook className="icon" /> Facebook</a><br/>
@@ -39,4 +35,4 @@ function Rodape() {
 }
 
 
-export default Rodape;
+export default RodapeGeral;

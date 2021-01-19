@@ -3,6 +3,7 @@ import {BsFillCaretDownFill} from 'react-icons/bs';
 import './Css/Servicos.css';
 import React from 'react';
 import IndexServicos from "../Componentes/servicos/indexServicos";
+import RodapeGeral from '../Componentes/Rodape/RodapeGeral';
 
 const Servicos = () => {
     const [action, setAction] = React.useState('');
@@ -76,7 +77,7 @@ const Servicos = () => {
                     </div>
                 </div>
             </div>
-
+        <RodapeGeral/>
     </>
            
     )

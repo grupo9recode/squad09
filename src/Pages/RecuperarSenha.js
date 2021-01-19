@@ -1,4 +1,5 @@
 import Menu from "../Componentes/Menu/Menu";
+import RodapeGeral from "../Componentes/Rodape/RodapeGeral";
 
 export const RecuperarSenha = () => {
     return (
@@ -19,7 +20,8 @@ export const RecuperarSenha = () => {
                     <button type='submit' className='btn btn-lg  btn-primary'>Enviar</button>
                 </form>
                 </div>
-                </div>
+            </div>
+            <RodapeGeral/>
         </>
     );
 }

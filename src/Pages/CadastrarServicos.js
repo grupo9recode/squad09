@@ -1,4 +1,5 @@
 import Menu from "../Componentes/Menu/Menu";
+import RodapeGeral from '../Componentes/Rodape/RodapeGeral';
 import React from 'react';
 import {BiBriefcase} from 'react-icons/bi';
 export default function CadastrarServicos() {
@@ -102,6 +103,8 @@ export default function CadastrarServicos() {
                     </div>
                 </div>
             </div>
+        <RodapeGeral/>    
         </>
+
     )
 }
