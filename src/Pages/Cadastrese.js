@@ -1,26 +1,38 @@
 import Menu from "../Componentes/Menu/Menu"
+import React from 'react';
+
 
 const Cadastrese = () => {
-    const pegarDados = async(evento) => {
+    const url = "http://localhost:3005/cadastrese";
+    const [form, setForm] = React.useState({
         
-        //fazendo a ligação com a api construída em php
-        const url = "http://localhost/API/action/cadastrar.php";
-        //aqui eu acho que essa const instanciando o formData ta pegando exatamente os valores que são digitados dentro do formulario
-        const dados = new FormData(evento.target)
-        //passando o method post que é o mesmo criado na api e no body ta chamando(??) o formData
-        const cabecalho = {
-            method: 'POST',
-            body: dados
-        }
+        id_usuario: "",
+        nome: "",
+        cpf: "",
+        celular: "",
+        email: "",
+        senha: ""
+    });
 
-        //fazendo o fetch pra pegar a api e depois retornando em json
-        const resposta = await fetch(url, cabecalho);
-        const retorno = await resposta.json();
-        console.log(retorno);
+    const [response, setResponse] = React.useState(null)
 
-        
-        
-        
+    function pegarInfo({ target }) {
+        const { id, value } = target
+        setForm({ ...form, [id]: value })
+        console.log({ [id]: value });
+    }
+
+    function pegarDados(event) {
+        fetch('http://localhost:3005/cadastrese', {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            //transforma em json para mandar pra api e api mandar pro banco
+            body: JSON.stringify(form)
+        }).then((res) => {
+            setResponse(res);
+        })
     }
 
     const Enviar = () => {
@@ -40,34 +52,40 @@ const Cadastrese = () => {
                 <form action='/login' onSubmit={pegarDados}>
                     <div className="mb-3">
                         <label for="username" className="form-label text-dark font-weight-bold">USERNAME</label>
-                        <input type="text" className="form-control" id="username" name="username" placeholder="ex: @username"/>
+                        <input type="text" className="form-control" id="id_usuario" name="id_usuario" placeholder="Ex: @username" value={form.id_usuario}
+                            onChange={pegarInfo}/>
                     </div>
                     <div className="mb-3">
                         <label for="nome" className="form-label text-dark font-weight-bold">NOME</label>
-                        <input type="text" className="form-control" id="nome" name="nome" />
+                        <input type="text" className="form-control" id="nome" name="nome" value={form.nome}
+                            onChange={pegarInfo}/>
                     </div>
                     <div className="mb-3">
                         <label for="cpf" className="form-label text-dark font-weight-bold">CPF</label>
-                        <input type="number" maxlength="11" className="form-control" id="cpf" name="cpf" />
+                        <input type="number" maxlength="11" className="form-control" id="cpf" name="cpf" value={form.cpf}
+                            onChange={pegarInfo}/>
                         <span className="text-white ">Digite apenas os números</span>
                     </div>
                    
                     
                     <div className="mb-3">
                         <label for="celular" className="form-label text-dark font-weight-bold">CELULAR</label>
-                        <input type="text" className="form-control" id="celular" name="celular" required/>
+                        <input type="text" className="form-control" id="celular" name="celular" required value={form.celular}
+                            onChange={pegarInfo}/>
                     </div>
                     <div className="mb-3">
                         <label for="email" className="form-label text-dark font-weight-bold">EMAIL</label>
-                        <input type="text" className="form-control" id="email" name="email" required />
+                        <input type="text" className="form-control" id="email" name="email" required value={form.email}
+                            onChange={pegarInfo}/>
                         </div>
                         <div className="mb-3">
                         <label for="senha" className="form-label text-dark font-weight-bold">SENHA</label>
-                        <input type="password" maxlength="8" className="form-control" id="senha" name="senha" /><span className="text-white ">Mínimo de 8 caracteres</span>
+                        <input type="password" maxlength="8" className="form-control" id="senha" name="senha" value={form.senha}
+                            onChange={pegarInfo}/><span className="text-white ">Mínimo de 8 caracteres</span>
                     </div>
                     <div className="mb-3">
-                        <label for="confirmaemail" className="form-label text-dark font-weight-bold">CONFIRMAR EMAIL</label>
-                            <input type="password" maxlength="8" className="form-control" id="confirmaemail" name="confirmaemail" />
+                        <label for="confirmaemail" className="form-label text-dark font-weight-bold">CONFIRMAR SENHA</label>
+                            <input type="password" maxlength="8" className="form-control" id="confirmasenha" name="confirmasenha"/>
                             <span className="text-white ">Mínimo de 8 caracteres</span>
                     </div>
                     

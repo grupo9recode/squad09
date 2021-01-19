@@ -1,13 +1,14 @@
 import Menu from "../Componentes/Menu/Menu";
 import './Css/CadastrarProdutos.css';
-import { FaStoreAlt } from "react-icons/fa";
 //import Rodape from '../Componentes/Rodape/Rodape';
 import React from 'react';
+import {BiStore} from 'react-icons/bi';
 
 export default function CadastrarProdutos() {
 
     const url = "http://localhost:3005/cadastrarprodutos";
     const [form, setForm] = React.useState({
+
         username: "",
         produto: "",
         categoria: "",
@@ -39,17 +40,19 @@ export default function CadastrarProdutos() {
     return (
         <>
             <Menu />
-            <div className="container">
-                <div className="mt-5 mb-5 p-3 border box-cadastro">
-                    <h1 className="text-center text-dark font-weight-bold">Cadastrar Produto</h1><hr></hr>
+            <div className='container'>
+                <div class="registration-form">
                     <form action="/produtos" className="form-group" onSubmit={enviarDados}>
-                        <div className="mb-3">
-                            <label for="nome" className="form-label text-dark font-weight-bold">SEU USERNAME</label>
-                            <input type="text" className="form-control" id="username" name="username" value={form.username} onChange={pegarDados} />
+                        <div className="form-icon">
+                            <span className=""><BiStore/></span>
                         </div>
                         <div className="mb-3">
-                            <label for="nome" className="form-label text-dark font-weight-bold">PRODUTO</label>
-                            <input type="text" className="form-control" id="produto" name="produto" value={form.produto} onChange={pegarDados} />
+                            <label for="nome" className="form-label text-dark font-weight-bold">SEU USERNAME DE CADASTRO</label>
+                            <input type="text" className="form-control" id="username" name="username" placeholder=" @EXEMPLO" value={form.username} onChange={pegarDados} />
+                        </div>
+                        <div className="mb-3">
+                            <label for="nome" className="form-label text-dark font-weight-bold">PRODUTOS</label>
+                            <input type="text" className="form-control" id="produto" name="produto" placeholder="NOME DO PRODUTO" value={form.produto} onChange={pegarDados} />
                         </div>
                         <div className="mb-3">
                             <label className="form-label text-dark font-weight-bold">CATEGORIA</label>
@@ -65,7 +68,6 @@ export default function CadastrarProdutos() {
                                 <option valeu='transporte'>Transporte</option>
                             </select>
                         </div>
-
                         <div className="mb-3">
                             <label className="form-label text-dark font-weight-bold">IMAGEM</label>
                             <div className="custom-file">
@@ -74,7 +76,6 @@ export default function CadastrarProdutos() {
                                 <div className="invalid-feedback">Example invalid custom file feedback</div>
                             </div>
                         </div>
-
                         <div className="mb-3">
                             <div className="input-group mb-3">
                                 <input type="text" name="valor" id="valor" className="form-control" placeholder="PREÇO DO PRODUTO" aria-label="Username" aria-describedby="basic-addon1" value={form.valor} onChange={pegarDados} />
@@ -90,11 +91,11 @@ export default function CadastrarProdutos() {
                             <button type="submit" className="btn btn-block create-account bg-primary">Cadastrar Produto</button>
                         </div>
                     </form>
-                    <div className="social-media">
+                    <div className="social-media">    
+                        {/* null */}  
                     </div>
                 </div>
-                </div>
-            
+            </div>       
         </>
     )
 }

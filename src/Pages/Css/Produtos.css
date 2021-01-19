@@ -116,6 +116,12 @@
     border-top-left-radius: 5px;
 }
 
+@media(max-width:1000px){
+    .imgSidebarProduto{
+      display: none;
+    }
+  }
+
 
 
 /* cards */ 
@@ -179,11 +185,11 @@
     position: absolute;
     top: 0;
     right: 0;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .textH4{
-    font-size: 18px;
+    font-size: 13px;
     margin-top: 15px;
     padding: 10px 0;
     font-weight: bold;
@@ -194,7 +200,7 @@
     width: 100%;
     padding: 5px 0;
     margin: 10px 0;
-    background: #45b9e0;
+    background: rgb(134, 53, 53);
     color: #fff;
     border-radius: 5px;
     border: none;
@@ -207,7 +213,7 @@
 }
 
 .description{
-    background: #92879b;
+    background: rgb(134, 53, 53);
     position: absolute;
     width: 140px;
     height: 140px;
@@ -259,3 +265,19 @@
     
 }
 
+.botaoBuscar{
+    background-color: #7d301d;
+    color: white;
+}
+
+.fundoNavItens{
+    background-color: rgb(255, 255, 255);
+}
+
+.textoProduto{
+    
+}
+
+.textoProduto b{
+    margin-right: auto;
+}

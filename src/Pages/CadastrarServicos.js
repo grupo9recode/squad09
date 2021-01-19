@@ -1,5 +1,6 @@
-import Menu from "../Componentes/Menu/Menu"
-import React from 'react'
+import Menu from "../Componentes/Menu/Menu";
+import React from 'react';
+import {BiBriefcase} from 'react-icons/bi';
 export default function CadastrarServicos() {
 
     // const cadastrarServicos = async (evento) => {
@@ -16,6 +17,8 @@ export default function CadastrarServicos() {
     //     console.log(retorno);
     // }
     const [form, setForm] = React.useState({
+
+        username:"",
         servico: "",
         categoria: "",
         valor: "",
@@ -28,7 +31,6 @@ export default function CadastrarServicos() {
         console.log({...form, [id]: value })
     }
     function handleSubmit(event) {
-        event.preventDefault()
         fetch("http://localhost:3005/cadastrarservicos", {
             method: "POST",
             headers: {
@@ -45,18 +47,22 @@ export default function CadastrarServicos() {
         <>
             <Menu />
             <div className='container'>
-                <div className='mt-5 mb-5 p-3 border box-cadastro'>
-                    <h1 className="text-center text-white">Cadastrar Serviço</h1><hr></hr>
-                    <form action="/servicos" className='form-group' onSubmit={handleSubmit}>
-                        <div className='mb-3'>
-                            <label for='nome' className='form-label text-white'>SERVIÇO</label>
-                            <input type='text' className='form-control' id='servico' name='servico' value={form.nome}
-                            onChange={handleChange} required />
+                <div class="registration-form">
+                    <form action="/servicos" className="form-group" onSubmit={handleSubmit}>
+                        <div className="form-icon">
+                            <span><BiBriefcase/></span>
                         </div>
-                        <div className='mb-3'>
-                            <label for='nome' className='form-label text-white'>CATEGORIA</label>
-                            <select className='form-select-lg select form-control' name='categoria' id='categoria' value={form.categoria}
-                            onChange={handleChange} required>
+                        <div className="mb-3">
+                            <label for="nome" className="form-label text-dark font-weight-bold">SEU USERNAME</label>
+                            <input type="text" className="form-control" id="username" name="username" placeholder=" @Exemplo" value={form.username} onChange={handleChange} />
+                        </div>
+                        <div className="mb-3">
+                            <label for="nome" className="form-label text-dark font-weight-bold">SERVIÇO</label>
+                            <input type="text" className="form-control" id="servico" name="servico" placeholder="SERVIÇO QUE IRÁ PRESTAR" value={form.produto} onChange={handleChange} />
+                        </div>
+                        <div className="mb-3">
+                            <label className="form-label text-dark font-weight-bold">CATEGORIA</label>
+                            <select className="form-select-lg select form-control" name="categoria" id='categoria' value={form.categoria} onChange={handleChange}>
                                 <option selected>Selecionar categoria</option>
                                 <option valeu='alimentação'>Alimentação</option>
                                 <option valeu='construcao e reforma'>Construção e reforma</option>
@@ -66,41 +72,34 @@ export default function CadastrarServicos() {
                                 <option valeu='salao'>Salão de beleza</option>
                                 <option valeu='servicos domesticos'>Serviços domésticos</option>
                                 <option valeu='transporte'>Transporte</option>
-                                <option valeu='outros'>Outros</option>
                             </select>
-
                         </div>
-
                         <div className="mb-3">
-                            <label className='form-label text-white'>IMAGEM</label>
-                            <div className='custom-file'>
-                                <input type='file' className='custom-file-input' id='validatedCustomFile' />
-                                <label className='custom-file-label' for='validateCustomFile'>Escolha o arquivo</label>
-                                <div className='invalid-feedback'>Exemple invalid custom file feedback</div>
+                            <label className="form-label text-dark font-weight-bold">IMAGEM</label>
+                            <div className="custom-file">
+                                <input type="file" className="custom-file-input" id="validatedCustomFile" />
+                                <label className="custom-file-label" for="validatedCustomFile">Escolha o arquivo</label>
+                                <div className="invalid-feedback">Example invalid custom file feedback</div>
                             </div>
                         </div>
-                        <div className='mb-3'>
-                            <label className='form-label text-white'>Valor</label>
-                            <div className='input-group mb-3'>
-                                <input type='number' name='valor' id='valor' className='form-control' placeholder='PREÇO DO SERVIÇO' arial-label="Username" arial-describedby='basic-addon1' value={form.valor}
-                            onChange={handleChange} required/>
-                                <span className='input-group-text' id='basic-addon1'>$</span>
+                        <div className="mb-3">
+                            <div className="input-group mb-3">
+                                <input type="text" name="valor" id="valor" className="form-control" placeholder="PREÇO DO PRODUTO" aria-label="Username" aria-describedby="basic-addon1" value={form.valor} onChange={handleChange} />
+                                <span className="input-group-text" id="basic-addon1">$</span>
                             </div>
                         </div>
-                        <div className='mb-3'>
-                            <label className='form-label text-white'>DESCRIÇÃO</label>
-                            <div className='form-floating'>
-                                <textarea className='form-control textarea' name='descricao' id='descricao' value={form.descricao}
-                            onChange={handleChange} required></textarea>
+                        <div className="mb-3">
+                            <div className="form-floating">
+                                <textarea className="form-control textarea" name="descricao" id="descricao" placeholder="DESCRIÇÃO DO PRODUTO" value={form.descricao} onChange={handleChange}></textarea>
                             </div>
                         </div>
-                        <div className='text-center'>
-                            <button className='btn btn-primary' name='enviar' type='submit'>Enviar</button>
+                        <div className="form-group">
+                            <button type="submit" className="btn btn-block create-account bg-primary">Cadastrar Produto</button>
                         </div>
-
-
                     </form>
-                    {response && response.ok && alert("Pedido enviado")}
+                    <div className="social-media">    
+                        {/* null */}  
+                    </div>
                 </div>
             </div>
         </>

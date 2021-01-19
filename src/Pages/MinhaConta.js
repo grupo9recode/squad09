@@ -10,7 +10,7 @@ const MinhaConta = () => {
             <Menu />
 
             <div className="container">
-                <div className="row d-flex justify-content-center">
+                <div className="row d-flex justify-content-center m-1">
                     <div className="col-md-10  mt-5 pt-5">
                         <div className="row z-depth-3 boxPerfil">
                             <div className="col-sm-4 bg-info rounded-left">
@@ -65,9 +65,7 @@ const MinhaConta = () => {
                                         <p className="font-weight-bold">Editar Dados</p>
                                         <h6 className="text-muted"><a href="/editardados" ><BiCommentEdit className='icon-minha-conta'/></a></h6>
                                     </div>
-                                </div>
-                                
-                               
+                                </div>                                                          
                             </div>
                         </div>
                     </div>
