@@ -10,9 +10,9 @@ const MinhaConta = () => {
         <>
             <Menu />
 
-            <div className="container">
+            <div className="container mb-5">
                 <div className="row d-flex justify-content-center m-1">
-                    <div className="col-md-10  mt-5 pt-5">
+                    <div className="col-md-10  mt-2 mb-4 pt-5">
                         <div className="row z-depth-3 boxPerfil">
                             <div className="col-sm-4 bg-info rounded-left">
                                 <div className="card-block text-center text-white">

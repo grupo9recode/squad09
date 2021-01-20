@@ -45,7 +45,7 @@ const Produtos = () => {
                         <a className="nav-link" aria-current="page" href="#">Moda</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" aria-current="page" href="#">Alimentação</a>
+                        <a className="nav-link" aria-current="page" href="#">Limpeza</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -79,7 +79,7 @@ const Produtos = () => {
                         </div>
                     </div>
                     <div className="col-md-12 col-lg-10 col-xs-12 box-produto mb-5" id="">                     
-                        {action && action.map(mapear => <IndexProduto username={mapear.username} nome={mapear.nome} email={mapear.email} produto={mapear.produto} valor={mapear.valor} descricao={mapear.descricao} telefone={mapear.celular} />)}                       
+                        {action && action.map(mapear => <IndexProduto username={mapear.username} nome={mapear.nome} email={mapear.email} produto={mapear.produto} categoria={mapear.categoria} valor={mapear.valor} descricao={mapear.descricao} telefone={mapear.celular} imagem={mapear.imagem} />)}                       
                     </div>
                 </div>
             </div>

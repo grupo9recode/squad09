@@ -8,7 +8,7 @@ const Contato = () => {
     return (
         <>
             <Menu />
-            <div className="container container-fluid  d-flex  contato">
+            <div className="container container-fluid  d-flex mt-5 mb-5 contato">
             <a href='/'><img src={require('../Imagens/onceicao.png').default} alt="" width="300" className='imagem-contato mr-5'/></a>
                 <div className="p-3 border mt-3 menu bg-white ml-auto mr-auto ">
                     <div className="form-icon">

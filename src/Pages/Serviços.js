@@ -28,19 +28,19 @@ const Servicos = () => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0 ">
                     <li className="nav-item">
-                        <a className="nav-link" aria-current="page" href="#">Alimentação</a>
+                        <a className="nav-link" aria-current="page" href="#">Limpeza</a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" aria-current="page" href="#">Construção e Reforma</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" aria-current="page" href="#">Informática</a>
+                        <a className="nav-link" aria-current="page" href="#">Babá</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" aria-current="page" href="#">Moda</a>
+                        <a className="nav-link" aria-current="page" href="#">Costureira</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" aria-current="page" href="#">Alimentação</a>
+                        <a className="nav-link" aria-current="page" href="#">Pintura</a>
                     </li>
                   
                     <li class="nav-item dropdown">
@@ -73,7 +73,7 @@ const Servicos = () => {
                         </div>
                     </div>
                     <div className="col-md-12 col-lg-10 col-xs-12 box-servico mb-5" id="">  
-                        {action && action.map(mapear => <IndexServicos username={mapear.username} nome={mapear.nome} email={mapear.email} servico={mapear.servico}  valor={mapear.valor} descricao={mapear.descricao} telefone={mapear.celular} />)}  
+                        {action && action.map(mapear => <IndexServicos username={mapear.username} nome={mapear.nome} email={mapear.email} servico={mapear.servico} categoria={mapear.categoria} valor={mapear.valor} descricao={mapear.descricao} telefone={mapear.celular} imagem={mapear.imagem} />)}  
                     </div>
                 </div>
             </div>

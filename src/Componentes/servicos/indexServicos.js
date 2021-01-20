@@ -1,23 +1,33 @@
 import './indexServicos.css';
 import React from 'react';
 import {BsInfoCircleFill} from 'react-icons/bs';
+import Autenticacao from '../../Autenticacao';
 
 const IndexServicos = (props) => {
     
+    function deletar(){
+        alert("Deletado com sucesso!")
+    }
 
     return(
             <>
                 <div className="card servico">
                         <div className="imgBox">
-                            <img className="img-img" src={require('../../Imagens/Produtos/produto2.jpg').default} />
+                            <img className="img-img" src={require(`../../Imagens/Servicos/${props.imagem}`).default} />
                         </div>
                         <div className="details">
                             <div className="text-content">
                                 <h3 className="textH3">{props.servico}</h3>
+                                <span className="text-muted">{props.categoria}</span>
                                 <div className="price text-danger">{props.valor}</div>
                             </div>
                             <h4 className="textH4">Para mais informações, clique no círculo do card.</h4>
-                            <button className="btnServico" type="button">Contato</button>
+
+                            <div className='container container-fluid d-flex justify-content-around'>
+                            {Autenticacao() ? <button className='btnServicoDeletar' onClick={deletar}>Deletar</button> : <></>}
+
+                        <button className="btnServico " type="button">Contato</button>
+                    </div>
                         </div>
                         <div className="descriptionServico">
                             <div className="iconProdu"><BsInfoCircleFill/></div>

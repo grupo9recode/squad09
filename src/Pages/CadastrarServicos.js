@@ -65,14 +65,13 @@ export default function CadastrarServicos() {
                             <label className="form-label text-dark font-weight-bold">CATEGORIA</label>
                             <select className="form-select-lg select form-control" name="categoria" id='categoria' value={form.categoria} onChange={handleChange}>
                                 <option selected>Selecionar categoria</option>
-                                <option valeu='alimentação'>Alimentação</option>
-                                <option valeu='construcao e reforma'>Construção e reforma</option>
-                                <option valeu='educacao'>Educação</option>
-                                <option valeu='informatica'>Informática</option>
-                                <option valeu='moda'>Moda</option>
-                                <option valeu='salao'>Salão de beleza</option>
-                                <option valeu='servicos domesticos'>Serviços domésticos</option>
-                                <option valeu='transporte'>Transporte</option>
+                                <option valeu='Limpeza'>Limpeza</option>
+                                <option valeu='Construcao e Reforma'>Construção e Reforma</option>
+                                <option valeu='Baba'>Babá</option>
+                                <option valeu='Costureira'>Costureira</option>
+                                <option valeu='Pintura'>Pintura</option>
+                                <option valeu='Educacao'>Educação</option>
+                                <option valeu='Salão de Beleza'>Salão de Beleza</option>
                             </select>
                         </div>
                         <div className="mb-3">
