@@ -72,13 +72,13 @@ const Produtos = () => {
             
             <div className="container-fluid">  
                 <div className="row">
-                    <div className="col-md-4 col-lg-2 col-sm-12 col-xs-12 mb-3 wrapper">
+                    <div className="col-md-4 col-lg-1 col-sm-12 col-xs-12 mb-3 wrapper">
                         <div className="sidebar">
                             <img className="imgSidebarProduto mb-5" src={require('../Imagens/maos.png').default}/>
                             <img className="imgSidebarProduto mt-5" src={require('../Imagens/antena.png').default}/>       
                         </div>
                     </div>
-                    <div className="col-md-12 col-lg-10 col-xs-12 box-produto mb-5" id="">                     
+                    <div className="col-md-12 col-lg-11 col-xs-12 box-produto mb-5" id="">                     
                         {action && action.map(mapear => <IndexProduto username={mapear.username} nome={mapear.nome} email={mapear.email} produto={mapear.produto} categoria={mapear.categoria} valor={mapear.valor} descricao={mapear.descricao} telefone={mapear.celular} imagem={mapear.imagem} />)}                       
                     </div>
                 </div>

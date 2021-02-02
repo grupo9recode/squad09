@@ -66,13 +66,13 @@ const Servicos = () => {
             </nav>
             <div className="container-fluid">                
                 <div className="row">
-                    <div className="col-md-4 col-lg-2 col-sm-12 col-xs-12 mb-3 wrapperServico">
+                    <div className="col-md-4 col-lg-1 col-sm-12 col-xs-12 mb-3 wrapperServico">
                         <div className="sidebar">
                             <img className="imgSidebarServico mb-5" src={require('../Imagens/lenco.png').default}/>
                             <img className="imgSidebarServico mt-5" src={require('../Imagens/menino.png').default}/>        
                         </div>
                     </div>
-                    <div className="col-md-12 col-lg-10 col-xs-12 box-servico mb-5" id="">  
+                    <div className="col-md-12 col-lg-11 col-xs-12 box-servico mb-5" id="">  
                         {action && action.map(mapear => <IndexServicos username={mapear.username} nome={mapear.nome} email={mapear.email} servico={mapear.servico} categoria={mapear.categoria} valor={mapear.valor} descricao={mapear.descricao} telefone={mapear.celular} imagem={mapear.imagem} />)}  
                     </div>
                 </div>
