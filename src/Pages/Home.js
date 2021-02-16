@@ -13,7 +13,7 @@ function Home() {
         
         <h1 className="splash-head">DANDARA</h1>
         <p className="splash-subhead">
-            Feito para que mulheres periféricas, mães solo tenham onde publicar seus produtos e serviços.
+            Feito para mulheres periféricas e mães solo tenham onde publicar seus produtos e serviços.
     
         </p>
         <p>

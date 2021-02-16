@@ -188,9 +188,10 @@ a.pure-button-primary {
 
 /* This is the subheading that appears on the blue section */
 .splash-subhead {
-    color: white;
+    color: black;
     letter-spacing: 0.05em;
-    opacity: 0.8;
+    opacity: 0.7;
+    background-color: white
     
 }
 .container{
