@@ -10,15 +10,13 @@ const MenuFechado = () => {
     return (
         <>
         <nav className="navbar navbar-expand-lg navbar-dark menu-container" id='menu'>
-            <a href='/'><img src={require('../../Imagens/mao.png').default} alt="Logo de mãos dadas" width="50" /></a>
+            <a href='/'><img src={require('../../Imagens/dandara.jpg').default} alt="Dandara" width="190" /></a>
             <button className="navbar-toggler text-center" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon m-auto"></span>
             </button>
             <div className="collapse navbar-collapse menu-links" id="navbarNav">
                 <ul className="navbar-nav">
-                    <li className="nav-item active">
-                        <a className="nav-link text-light" href="/" to='/'><FiHome className="icons"/>HOME<span className="sr-only">(current)</span></a>
-                    </li>
+                   
                     <li className="nav-item active">
                         <a className="nav-link text-light" href="/produtos" to='/produtos'><FaStoreAlt className="icons"/>PRODUTOS<span className="sr-only">(current)</span></a>
                     </li>

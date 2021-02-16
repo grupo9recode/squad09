@@ -4,9 +4,11 @@ import { MdContactMail } from "react-icons/md";
 
 const MenuAberto = () => {
     return (
+
+
         <>
-            <nav className="navbar navbar-expand-lg navbar-dark menu-container " id='menu'>
-            <a href='/'><img src={require('../../Imagens/mao.png').default} alt="Logo de mãos dadas" width="50" /></a>
+            <nav className="navbar navbar-expand-lg navbar-fixed-top menu-container " id='menu'>
+            <a href='/'><img src={require('../../Imagens/dandara.png').default} alt="Dandara" width="200"  /></a>
                 <button className="navbar-toggler text-center" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon m-auto "></span>
                 </button>
@@ -32,6 +34,7 @@ const MenuAberto = () => {
                 </div>
             </nav>
         </>
+        
     )
 }
 export default MenuAberto;

@@ -1,7 +1,12 @@
 .menu-container{
-    background-color: #7d301d;
+    background-color:  #c06764;
     color: black;
     text-align: center;
+    position: fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    z-index: 4;
 }
 .icons{
     width: 20px;

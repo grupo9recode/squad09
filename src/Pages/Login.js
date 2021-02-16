@@ -46,7 +46,7 @@ const Login = () => {
         <>
             <Menu/>
             
-            <div className="container container-fluid  d-flex mt-5 mb-5  menu">
+            <div className="container container-fluid  d-flex mt-6 mb-6  menu">
             <a href='/'><img src={require('../Imagens/imponente.png').default} alt="" width="300" className='imagem-contato mr-auto'/></a>
                 <div className="p-3 border mt-3 menu bg-white mb-3 ml-auto mr-auto ">
                     <div className="form-icon">
