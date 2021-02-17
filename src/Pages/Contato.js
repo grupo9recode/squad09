@@ -8,53 +8,34 @@ const Contato = () => {
     return (
         <>
             <Menu />
-            <div classname="body1"> <div className="background">
-     <div className="container">
-       <div className="screen">
-         <div className="screen-header">
-           <div className="screen-header-left">
-             <div className="screen-header-button close"></div>
-             <div className="screen-header-button maximize"></div>
-             <div className="screen-header-button minimize"></div>
-           </div>
-           <div className="screen-header-right">
-             <div className="screen-header-ellipsis"></div>
-             <div className="screen-header-ellipsis"></div>
-             <div className="screen-header-ellipsis"></div>
-           </div>
-         </div>
-         <div className="screen-body">
-           <div className="screen-body-item left">
-             <div className="app-title">
-               <span>Contato</span>
-               <span>chama no zap!</span>
-             </div>
-             <div className="app-contact">Desenvolvido graças ao RecodePro (2020)</div>
-           </div>
-           <div className="screen-body-item">
-             <div className="app-form">
-               <div className="app-form-group">
-                 <input className="app-form-control" placeholder="NAME" value="nome"></input>
-               </div>
-               <div className="app-form-group">
-                 <input className="app-form-control" placeholder="EMAIL"></input>
-               </div>
-               <div className="app-form-group message">
-                <input className="app-form-control" placeholder="mensagem"></input>
-               </div>
-               
-               <div className="app-form-group buttons">
-                 <button className="app-form-button">APAGAR</button>
-                 <button className="app-form-button">ENVIAR</button>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-     
-       </div>
-     </div>
-   </div>
+            <div className="container container-fluid  d-flex mt-6 mb-6 contato">
+            <a href='/'><img src={require('../Imagens/onceicao.png').default} alt="" width="300" className='imagem-contato mr-5'/></a>
+                <div className="p-3 border mt-3 menu bg-white ml-auto mr-auto ">
+                    <div className="form-icon">
+                        <span><RiContactsBookUploadLine/></span>
+                    </div>
+                <form action='' method='get' >
+                    <div className="mb-1">
+                        <label for="email" className="form-label text-dark font-weight-bold">EMAIL</label>
+                        <input type="email" className="form-control" id="email" name="email" />
+                    </div>
+                    <div className="mb-1">
+                        <label for="senha" className="form-label text-dark font-weight-bold">EMAIL</label>
+                        <input type="password" className="form-control" id="senha" name="senha" />
+                    </div>
+                    <div className="mb-1 d-flex">
+                        <div className="form- text-dark font-weight-bold">
+                            <label for="mensagem">MENSAGEM</label>
+                            <textarea className="form-control" id="mensagem" name='mensagem' rows="5" cols="100"></textarea>
+                        </div> 
+                    </div>
+                        <div className="ml-auto mt-2">
+                            <button type="submit" className="btn botao text-white font-weight-bold">ENTRAR</button>
+                        </div>  
+                    </form>
+                    
+                </div>
+            </div>
                 <RodapeGeral/>
         </>
     )

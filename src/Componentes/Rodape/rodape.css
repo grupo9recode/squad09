@@ -1,11 +1,12 @@
 .rodape{
-    background-color: #513C32;
+    background-color:#c06764;
     color: white;
     text-align: center;
     width: 100%;
     border-radius: 5px 5px 0 0;
-    margin-top: 30px;
+    margin-top: 60px;
     padding: 15px;
+    font-weight: bold
     
 }
 .rodape a {

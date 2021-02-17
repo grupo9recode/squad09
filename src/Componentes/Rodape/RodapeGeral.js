@@ -14,7 +14,7 @@ function RodapeGeral() {
                     <a href='/produtos'><p>Produtos</p></a>
                     <a href='/servicos'><p>Serviços</p></a>
                     <a href='/contato'><p>Contato</p></a>
-                    <a href='#menu'><p>Voltar ao topo</p></a>
+                    
                 </div>
                 <a href='/'><img src={require('../../Imagens/mao.png').default} class="img-fluid mt-5" id='logoRodape' alt="Logo de mãos dadas" width="100%" /></a>
                 <div className='nossasRedes'>
