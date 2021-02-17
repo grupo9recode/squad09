@@ -14,11 +14,11 @@ const MinhaConta = () => {
                 <div className="row d-flex justify-content-center m-1">
                     <div className="col-md-10  mt-2 mb-4 pt-5">
                         <div className="row z-depth-3 boxPerfil">
-                            <div className="col-sm-4 bg-info rounded-left">
+                            <div className="col-sm-4  rounded-left">
                                 <div className="card-block text-center text-white">
                                     <BsPersonSquare className="iconMinhaConta mt-5"/>
                                     <h2 className="font-weight-bold mt-4">Name</h2>
-                                    <p>Profissao</p>
+                                  
                                     <FiEdit className="fiEdit mb-3"/>
                                     <ul className="list-unstyled d-flex justify-content-center mt-4">
                                         <li><a href="#"> <FiFacebook className="iconContatoConta"/> </a></li>

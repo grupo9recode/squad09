@@ -83,15 +83,24 @@ label {
  */
  .pure-g{
     text-align: justify;
-    margin-top: 10px;
+    
+    
  }
 .l-box {
     padding: 1em;
+    margin-top: 30px;
 }
 
 .l-box-lrg {
     padding: 2em;
     border-bottom: 1px solid rgba(0,0,0,0.1);
+   
+    
+}
+
+.box2 {
+    margin-left: 65px;
+    margin-top: -30px;
     
 }
 
@@ -234,9 +243,16 @@ a.pure-button-primary {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     margin: 2em 0 1em;
-    font-weight: bold
+    
 }
-
+.content-head-2 {
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin: 2em 0 1em;
+    margin-top: -65px;
+ 
+}
 /* This is a modifier class used when the content-head is inside a ribbon */
 .content-head-ribbon {
     color: black;
